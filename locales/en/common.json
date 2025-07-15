@@ -1,0 +1,16 @@
+{
+    "title": "Olena Holub – Full Stack Developer",
+    "description": "Personal website and portfolio of Olena Holub, a web developer based in Spain.",
+    "projectsTitle": "Projects – Olena Holub",
+    "projectsDescription": "Explore the professional and personal projects of Olena Holub.",
+    "contactTitle": "Contact – Olena Holub",
+    "contactDescription": "Get in touch with Olena Holub through this contact page.",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": "All rights reserved © Olena Holub",
+    "intro": "Hi, I'm Olena Holub, a full stack developer in Spain."
+  }
+  

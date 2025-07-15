@@ -1,0 +1,16 @@
+{
+    "title": "Olena Holub – Desarrolladora Full Stack",
+    "description": "Sitio web personal y portafolio de Olena Holub, desarrolladora web en España.",
+    "projectsTitle": "Proyectos – Olena Holub",
+    "projectsDescription": "Explora los proyectos personales y profesionales de Olena Holub.",
+    "contactTitle": "Contacto – Olena Holub",
+    "contactDescription": "Ponte en contacto con Olena Holub a través de esta página.",
+    "nav": {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "footer": "Todos los derechos reservados © Olena Holub",
+    "intro": "Hola, soy Olena Holub, desarrolladora full stack en España."
+  }
+  
