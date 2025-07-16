@@ -1,19 +1,13 @@
+import Layout from '../components/Layout';
 import type { AppProps } from 'next/app';
-import '../styles/globals.css';
-import { useRouter } from 'next/router';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import '@/styles/globals.css';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
-  const { locale } = useRouter();
+export default function MyApp({ Component, pageProps, router }: AppProps) {
+  const isHome = router.pathname === '/';
 
-  return (
-    <>
-      <Navbar locale={locale!} />
-      <main className="min-h-screen p-6">
-        <Component {...pageProps} />
-      </main>
-      <Footer locale={locale!} />
-    </>
-  );
+  const getLayout =
+    (Component as any).getLayout ||
+    ((page: React.ReactNode) => (isHome ? page : <Layout>{page}</Layout>));
+
+  return getLayout(<Component {...pageProps} />);
 }

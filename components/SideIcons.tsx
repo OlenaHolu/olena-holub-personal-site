@@ -1,0 +1,39 @@
+// components/SideIcons.tsx
+import {
+    Home,
+    User,
+    Briefcase,
+    LayoutGrid,
+    MessageCircle,
+    Send,
+  } from 'lucide-react';
+  
+  const navItems = [
+    { icon: Home, label: 'Home', href: '#home' },
+    { icon: User, label: 'About', href: '#about' },
+    { icon: Briefcase, label: 'Resume', href: '#resume' },
+    { icon: LayoutGrid, label: 'Portfolio', href: '#portfolio' },
+    { icon: MessageCircle, label: 'Testimonials', href: '#testimonials' },
+    { icon: Send, label: 'Contact', href: '#contact' },
+  ];
+  
+  export default function SideIcons() {
+    return (
+      <div className="fixed right-4 top-1/2 -translate-y-1/2 space-y-4 z-50">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          return (
+            <a
+              key={item.label}
+              href={item.href}
+              title={item.label}
+              className="bg-yellow-400 text-black p-3 rounded-full shadow-md hover:scale-110 transition flex items-center justify-center"
+            >
+              <Icon size={20} className="text-black" />
+            </a>
+          );
+        })}
+      </div>
+    );
+  }
+  
