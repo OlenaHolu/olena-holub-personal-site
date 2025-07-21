@@ -13,7 +13,7 @@ import {
     { icon: User, label: 'About', href: '#about' },
     { icon: Briefcase, label: 'Resume', href: '#resume' },
     { icon: LayoutGrid, label: 'Portfolio', href: '#portfolio' },
-    { icon: MessageCircle, label: 'Testimonials', href: '#testimonials' },
+    { icon: MessageCircle, label: 'Recommendation', href: '#recommendation' },
     { icon: Send, label: 'Contact', href: '#contact' },
   ];
   
