@@ -13,60 +13,78 @@ export default function About() {
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
-        {/* Left - Metrics */}
-        <div className="grid grid-cols-2 gap-4 text-center bg-black text-yellow-400 p-6 rounded-lg">
-          <div>
+
+        <div className="relative grid grid-cols-2 grid-rows-2 mt-10 w-full max-w-xl mx-auto text-yellow-400 text-center bg-black rounded overflow-hidden">
+          {/* LÍNEA VERTICAL */}
+          <div className="absolute left-1/2 top-[8%] bottom-[8%]  w-0.5 border-l border-dashed border-gray-500 z-0" />
+
+          {/* LÍNEAS HORIZONTALES (izq y der) */}
+          {/* Izquierda */}
+          <div className="absolute top-1/2 left-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
+          {/* Derecha */}
+          <div className="absolute top-1/2 right-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
+
+          {/* MÉTRICA 1 */}
+          <div className="flex flex-col items-center justify-center p-6 z-10">
             <div className="text-2xl font-bold">2</div>
             <div className="text-sm">YEARS OF TRAINING</div>
           </div>
-          <div>
+
+          {/* MÉTRICA 2 */}
+          <div className="flex flex-col items-center justify-center p-6 z-10">
             <div className="text-2xl font-bold">10+</div>
             <div className="text-sm">PROJECTS COMPLETED</div>
           </div>
-          <div>
+
+          {/* MÉTRICA 3 */}
+          <div className="flex flex-col items-center justify-center p-6 z-10">
             <div className="text-2xl font-bold">100%</div>
             <div className="text-sm">DEDICATION</div>
           </div>
-          <div>
+
+          {/* MÉTRICA 4 */}
+          <div className="flex flex-col items-center justify-center p-6 z-10">
             <div className="text-2xl font-bold">∞</div>
             <div className="text-sm">PASSION FOR CODE</div>
           </div>
         </div>
 
+
+
         {/* Right - Skills */}
         <div>
-          <h3 className="text-xl font-semibold mb-4 text-gray-900">What I Do</h3>
+          <h3 className="text-3xl font-semibold mb-4 text-gray-900">What I Do</h3>
           <div className="space-y-6 text-gray-700 text-sm">
-    <div className="flex items-start gap-4">
-      <Code2 className="text-yellow-500 mt-1" size={20} />
-      <div>
-        <p className="font-bold">Full-Stack Web Development</p>
-        <p>
-          Building modern, responsive applications using React, Next.js, Node.js, PHP, Laravel & Symfony.
-        </p>
-      </div>
-    </div>
+            <div className="flex items-start gap-4">
+              <img src="/images/about/1.png" alt="image about" className="text-yellow-500 mt-1" width={100} height={100} />
+              <div>
+                <p className="font-bold">Full-Stack Web Development</p>
+                <p>
+                  Building modern, responsive applications using React, Next.js, Node.js, PHP, Laravel & Symfony.
+                </p>
+              </div>
+            </div>
 
-    <div className="flex items-start gap-4">
-      <Plug className="text-yellow-500 mt-1" size={20} />
-      <div>
-        <p className="font-bold">API Design & Integration</p>
-        <p>
-          Creating and consuming RESTful APIs, ensuring secure, scalable data flow across frontend and backend.
-        </p>
-      </div>
-    </div>
+            <div className="flex items-start gap-4">
+              <img src="/images/about/2.png" alt="image about" className="text-yellow-500 mt-1" width={100} height={100} />
+              <div>
+                <p className="font-bold">API Design & Integration</p>
+                <p>
+                  Creating and consuming RESTful APIs, ensuring secure, scalable data flow across frontend and backend.
+                </p>
+              </div>
+            </div>
 
-    <div className="flex items-start gap-4">
-      <Rocket className="text-yellow-500 mt-1" size={20} />
-      <div>
-        <p className="font-bold">Deployment & Continuous Learning</p>
-        <p>
-          Fast and reliable deployment using Vercel and Railway. Always expanding my knowledge with new tools and tech.
-        </p>
-      </div>
-    </div>
-  </div>
+            <div className="flex items-start gap-4">
+              <img src="/images/about/3.png" alt="image about" className="text-yellow-500 mt-1" width={100} height={100} />
+              <div>
+                <p className="font-bold">Deployment & Continuous Learning</p>
+                <p>
+                  Fast and reliable deployment using Vercel and Railway. Always expanding my knowledge with new tools and tech.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
