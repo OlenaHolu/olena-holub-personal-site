@@ -1,10 +1,13 @@
-import { Code2, Plug, Rocket } from 'lucide-react';
-
 export default function About() {
   return (
-    <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-16">
-      <h2 className="text-4xl font-bold mb-8">ABOUT ME</h2>
-      <p className="text-lg mb-8 text-gray-800 leading-relaxed text-justify w-full">
+    <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-5">
+     <div className="flex justify-center mb-12">
+  <h2 className="text-4xl sm:text-5xl font-bold text-center w-full px-6 py-6 border-2 border-grey-400 rounded-lg inline-block">
+    ABOUT ME
+  </h2>
+</div>
+
+     <p className="text-lg mb-8 text-gray-800 leading-relaxed text-justify w-full">
         I’m <strong>Olena Holub</strong>, a full-stack web developer passionate about building modern, performant, and user-friendly applications. I recently completed a Higher Degree in Web Application Development, graduating <strong>with honors</strong>, and gained hands-on experience developing real-world tools—most notably, <strong>FreediveAnalyzer</strong>, an advanced analytics platform for freedivers.
         <br /><br />
         I work with technologies like <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong>, and have solid experience in backend development using <strong>PHP</strong>, <strong>Laravel</strong>, and <strong>Symfony</strong>. I enjoy building <strong>RESTful APIs</strong> and deploying projects with platforms like <strong>Vercel</strong> and <strong>Railway</strong>.
@@ -15,43 +18,31 @@ export default function About() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
 
         <div className="relative grid grid-cols-2 grid-rows-2 mt-10 w-full max-w-xl mx-auto text-yellow-400 text-center bg-black rounded overflow-hidden">
-          {/* LÍNEA VERTICAL */}
           <div className="absolute left-1/2 top-[8%] bottom-[8%]  w-0.5 border-l border-dashed border-gray-500 z-0" />
-
-          {/* LÍNEAS HORIZONTALES (izq y der) */}
-          {/* Izquierda */}
           <div className="absolute top-1/2 left-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
-          {/* Derecha */}
           <div className="absolute top-1/2 right-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
 
-          {/* MÉTRICA 1 */}
           <div className="flex flex-col items-center justify-center p-6 z-10">
-            <div className="text-2xl font-bold">2</div>
+            <div className="text-5xl font-bold">2</div>
             <div className="text-sm">YEARS OF TRAINING</div>
           </div>
 
-          {/* MÉTRICA 2 */}
           <div className="flex flex-col items-center justify-center p-6 z-10">
-            <div className="text-2xl font-bold">10+</div>
+            <div className="text-5xl font-bold">10+</div>
             <div className="text-sm">PROJECTS COMPLETED</div>
           </div>
 
-          {/* MÉTRICA 3 */}
           <div className="flex flex-col items-center justify-center p-6 z-10">
-            <div className="text-2xl font-bold">100%</div>
+            <div className="text-5xl font-bold">100%</div>
             <div className="text-sm">DEDICATION</div>
           </div>
 
-          {/* MÉTRICA 4 */}
           <div className="flex flex-col items-center justify-center p-6 z-10">
-            <div className="text-2xl font-bold">∞</div>
-            <div className="text-sm">PASSION FOR CODE</div>
-          </div>
+    <div className="text-4xl font-bold">🇺🇦 🇷🇺 🇪🇸 🇬🇧</div>
+    <div className="text-sm">LANGUAGES SPOKEN</div>
+  </div>
         </div>
 
-
-
-        {/* Right - Skills */}
         <div>
           <h3 className="text-3xl font-semibold mb-4 text-gray-900">What I Do</h3>
           <div className="space-y-6 text-gray-700 text-sm">
