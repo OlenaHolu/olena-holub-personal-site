@@ -35,14 +35,14 @@ export default function Sidebar() {
   }, []);
 
   return (
-    <aside className="w-48 bg-yellow-400 text-black min-h-screen flex flex-col items-center">
+    <aside className="w-60 bg-yellow-400 text-black min-h-screen flex flex-col items-center">
       {/* Avatar */}
       <Image
         src="/images/olenaCROP.jpg"
         alt="Olena Holub"
         width={80}
         height={80}
-        className="mb-6 w-full h-auto shadow-lg"
+        className="mb-6 w-full shadow-lg"
       />
 
       {/* Navigation centered vertically */}
