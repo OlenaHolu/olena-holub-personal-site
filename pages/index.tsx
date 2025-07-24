@@ -28,9 +28,9 @@ export default function Home() {
                         Full Stack Developer
                     </p>
                     <p className="text-gray-600 text-base sm:text-lg mb-8 max-w-2xl leading-relaxed text-justify">
-  Creative and detail-oriented full-stack web developer specializing in modern technologies like <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>PHP</strong>, <strong>Laravel</strong> and <strong>Symfony</strong>. I build scalable, elegant applications with clean code and great user experience.
-  Currently based in Spain and open to exciting remote or on-site opportunities.
-</p>
+                        Creative and detail-oriented full-stack web developer specializing in modern technologies like <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>PHP</strong>, <strong>Laravel</strong> and <strong>Symfony</strong>. I build scalable, elegant applications with clean code and great user experience.
+                        Currently based in Spain and open to exciting remote or on-site opportunities.
+                    </p>
 
 
                     <a
@@ -41,7 +41,7 @@ export default function Home() {
                     </a>
                 </div>
 
-                <div className="lg:w-1/2 relative min-h-[400px] lg:min-h-full grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                <div className="lg:w-1/2 relative min-h-[400px] lg:min-h-full sepia-0 hover:sepia transition duration-300 ease-in-out">
                     <Image
                         src="/images/olenaCROP.jpg"
                         alt="Olena Holub"

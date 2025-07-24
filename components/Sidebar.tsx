@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 export default function Sidebar() {
   return (
-    <aside className="w-48 bg-yellow-400 text-black min-h-screen p-4 flex flex-col items-center">
+    <aside className="w-48 bg-yellow-400 text-black min-h-screen flex flex-col items-center">
       <Image
         src="/images/olenaCROP.jpg"
         alt="Olena Holub"
         width={80}
         height={80}
-        className="rounded-full mb-4"
+        className="mb-4 w-full h-auto shadow-lg"
       />
       <nav className="flex flex-col space-y-4 text-sm font-semibold">
         <Link href="/">Home</Link>
