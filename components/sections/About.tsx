@@ -7,13 +7,14 @@ export default function About() {
   </h2>
 </div>
 
-     <p className="text-lg mb-8 text-gray-800 leading-relaxed text-justify w-full">
-        I’m <strong>Olena Holub</strong>, a full-stack web developer passionate about building modern, performant, and user-friendly applications. I recently completed a Higher Degree in Web Application Development, graduating <strong>with honors</strong>, and gained hands-on experience developing real-world tools—most notably, <strong>FreediveAnalyzer</strong>, an advanced analytics platform for freedivers.
-        <br /><br />
-        I work with technologies like <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Node.js</strong>, and have solid experience in backend development using <strong>PHP</strong>, <strong>Laravel</strong>, and <strong>Symfony</strong>. I enjoy building <strong>RESTful APIs</strong> and deploying projects with platforms like <strong>Vercel</strong> and <strong>Railway</strong>.
-        <br /><br />
-        I also have basic knowledge of <strong>Java</strong> and <strong>Python</strong>, and I’m always eager to explore new technologies and grow as a developer.
-      </p>
+<p className="text-lg mb-8 text-gray-800 leading-relaxed text-justify w-full">
+  I hold a Master’s Degree in Finance and recently graduated with honors from a Higher Degree in Web Application Development, where I built a strong foundation in full-stack technologies and completed real-world projects, including <strong>FreediveAnalyzer</strong>—an advanced analytics platform for freedivers.
+  <br /><br />
+  I specialize in building modern, scalable, and user-friendly applications using <strong>JavaScript</strong> and <strong>PHP</strong>, with practical experience across both frontend and backend development. I work confidently with frameworks such as <strong>React</strong>, <strong>Node.js</strong>, <strong>Laravel</strong>, and <strong>Symfony</strong>, and enjoy creating and consuming <strong>RESTful APIs</strong>.
+  <br /><br />
+  My deployment experience includes platforms like <strong>Vercel</strong>, <strong>Railway</strong>, and <strong>AWS</strong>. I also have a basic understanding of <strong>Java</strong> and <strong>Python</strong>, and I’m always committed to continuous learning and improving my development skills.
+</p>
+
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
 
@@ -28,7 +29,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center justify-center p-6 z-10">
-            <div className="text-5xl font-bold">10+</div>
+            <div className="text-5xl font-bold">5+</div>
             <div className="text-sm">PROJECTS COMPLETED</div>
           </div>
 
