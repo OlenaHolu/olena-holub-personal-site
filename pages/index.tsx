@@ -12,7 +12,6 @@ export default function Home() {
         <div className="relative scroll-smooth">
             <SideIcons />
 
-            {/* HERO SECTION */}
             <section
                 id="home"
                 className="relative flex flex-col lg:flex-row min-h-screen bg-white"
@@ -22,7 +21,12 @@ export default function Home() {
                         HI THERE!
                     </h1>
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 text-gray-900 leading-tight">
-                        I’M <span className="text-yellow-500">OLENA</span>
+                        I’M <span className="drop-shadow-[0_2px_3px_rgba(250,204,21,1)]"
+                         style={{
+                            WebkitTextStroke: '2px #facc15',
+                            color: 'white',
+                          }}
+                        >OLENA</span>
                     </h2>
                     <p className="uppercase text-sm font-semibold bg-yellow-400 text-black px-3 py-1 w-max mb-6 tracking-wide rounded shadow">
                         Full Stack Developer
