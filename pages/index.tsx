@@ -49,8 +49,8 @@ export default function Home() {
                     <Image
                         src="/images/olenaCROP.jpg"
                         alt="Olena Holub"
-                        fill
-                        style={{ objectFit: 'cover' }}
+                        layout="fill"
+                        objectFit="cover"
                         priority
                     />
                 </div>
