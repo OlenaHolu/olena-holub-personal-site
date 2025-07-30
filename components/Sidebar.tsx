@@ -38,7 +38,7 @@ export default function Sidebar() {
     <aside className="w-60 bg-yellow-400 text-black min-h-screen flex flex-col items-center">
       {/* Avatar */}
       <Image
-        src="/images/olenaCROP.jpg"
+        src="/images/olenaCROP.JPG"
         alt="Olena Holub"
         width={80}
         height={80}
