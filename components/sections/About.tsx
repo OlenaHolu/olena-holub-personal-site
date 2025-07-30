@@ -12,7 +12,7 @@ export default function About() {
           specializing in modern technologies like <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>PHP</strong>, <strong>Laravel</strong> and <strong>Symfony</strong>. I build scalable, elegant applications with clean code and great user experience.
           Currently based in Spain and open to exciting remote or on-site opportunities.
           <br /><br />
-          My deployment experience includes platforms like <strong>Vercel</strong>, <strong>Railway</strong>, and <strong>AWS</strong>. I also have a basic understanding of <strong>Java</strong> and <strong>Python</strong>, and I’m always committed to continuous learning and improving my development skills.
+          My deployment experience includes platforms like <strong>Vercel</strong>, <strong>Railway</strong>, and <strong>AWS</strong>.  I also have solid experience with object-oriented languages like <strong>Java</strong> and <strong>Python</strong>, and I’m always committed to continuous learning and improving my development skills.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

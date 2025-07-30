@@ -64,10 +64,10 @@ export default function Resume() {
 
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Financial Analyst – Prominvestbank
+                                Management, Analis – Banking sector
                             </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>Zaporizhzhia, Ukraine – 2008 – 2012</strong><br />
+                                <strong>Zaporizhzhia, Ukraine – 2006 – 2014</strong><br />
                                 Worked in the retail and corporate banking division. Conducted risk assessments, analyzed financial data, and supported loan portfolio management and customer relations.
                             </p>
                         </div>

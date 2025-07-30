@@ -29,7 +29,7 @@ export default function Home() {
                         >OLENA</span>
                     </h2>
                     <p className="uppercase text-sm font-semibold bg-yellow-400 text-black px-3 py-1 w-max mb-6 tracking-wide rounded shadow">
-                        Full Stack Developer
+                        Full Stack Web Developer
                     </p>
                     <p className="text-gray-600 text-base sm:text-lg mb-8 max-w-2xl leading-relaxed text-justify">
                         Creative and detail-oriented full-stack web developer specializing in modern technologies like <strong>JavaScript</strong>, <strong>Next.js</strong>, <strong>PHP</strong>, <strong>Laravel</strong> and <strong>Symfony</strong>. I build scalable, elegant applications with clean code and great user experience.
