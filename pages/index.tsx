@@ -47,7 +47,7 @@ export default function Home() {
 
                 <div className="lg:w-1/2 relative min-h-[400px] lg:min-h-full sepia-0 hover:sepia transition duration-300 ease-in-out">
                     <Image
-                        src="/images/olenaCROP.jpg"
+                        src="/images/olenaCROP.JPG"
                         alt="Olena Holub"
                         layout="fill"
                         objectFit="cover"
