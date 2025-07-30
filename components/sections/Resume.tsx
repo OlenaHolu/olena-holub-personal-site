@@ -7,53 +7,68 @@ export default function Resume() {
                 </h2>
             </div>
 
-            <div className="px-8">
-                <div className="mb-16 border-b border-gray-300 pb-10">
+            <div className="px-8 flex flex-col justify-around min-h-[calc(100vh-15rem)]">
+                <div className="border-b border-gray-300 pb-10">
                     <h3 className="text-xl font-semibold mb-6">EDUCATION</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
+                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">Associate Degree in Web Dev</h4>
+                            <p className="text-sm leading-relaxed">
+                                <strong> IES Benigasló, Vall de Uxó, Castellón, Spain</strong> <br />
+                                2024 – 2025 <br />
+                                (Formación Profesional de Grado Superior) <br />
+                                Graduated with honors. Focus on full-stack development, databases, and deployment tools.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">English: Level B2</h4>
+                            <p className="text-sm leading-relaxed">
+                                <strong>EOI Castellón de la Plana, Spain</strong><br />
+                                2022 – 2023 <br />
+                                Completed with strong performance. Emphasis on business, tech, and academic communication.
+                            </p>
+                        </div>
+                        <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">Master's in Finance</h4>
                             <p className="text-sm leading-relaxed">
-                                Kyiv National Economic University <br />
-                                Graduated in 2012 with strong focus on financial systems and data analysis.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">Higher Degree in Web Dev</h4>
-                            <p className="text-sm leading-relaxed">
-                                IES Campanillas, Málaga, Spain <br />
-                                2024 – Graduated with honors. Specialized in full-stack web technologies.
-                            </p>
-                        </div>
-                        <div>
-                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">Online Certifications</h4>
-                            <p className="text-sm leading-relaxed">
-                                Completed practical training in React, Node.js, PHP and AWS on platforms like OpenBootcamp, freeCodeCamp, and YouTube.
+                                <strong>Zaporizhzhya National Technical University, Ukraine </strong> <br />
+                                2003 – 2008 <br />
+                                Graduated with distinction. Specialized in financial systems, analysis, and business planning.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 {/* EXPERIENCE BLOCK */}
-                <div className="mb-16 pb-10">
+                <div className="pb-10">
                     <h3 className="text-xl font-semibold mb-6">EXPERIENCE</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">FreediveAnalyzer Project</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                Full Stack Web Developer – Personal Project
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                Developed an advanced data analytics tool for freedivers. Built with Laravel, Node.js, and Chart.js.
+                                <strong>Remote – Mar 2024 – Present</strong><br />
+                                Created a full-stack platform for freediving analytics using Laravel (API) and React. Deployed with Vercel and Railway. Focused on data flow, user experience, and architecture.
                             </p>
                         </div>
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">Full-Stack Projects</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                Web Developer Intern – ORBYS
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                Created responsive and scalable web apps using React, Next.js, PHP, and REST APIs. Deployed on Vercel & Railway.
+                                <strong>Castellón, Spain – 2025</strong><br />
+                                Full-stack development using Symfony and React. Participated in agile sprints, integrated APIs, and improved existing UX/UI features across internal platforms.
                             </p>
                         </div>
+
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">Team Collaboration</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                Financial Analyst – Prominvestbank
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                Experienced working with Git, GitHub, Figma, and agile tools. Focused on clean code, testing and team productivity.
+                                <strong>Zaporizhzhia, Ukraine – 2008 – 2012</strong><br />
+                                Worked in the retail and corporate banking division. Conducted risk assessments, analyzed financial data, and supported loan portfolio management and customer relations.
                             </p>
                         </div>
                     </div>
