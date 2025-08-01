@@ -14,9 +14,18 @@ const navItems = [
 
 export default function Sidebar() {
   const [activeSection, setActiveSection] = useState<string>('#home');
+  const [showMobileNav, setShowMobileNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      const homeSection = document.querySelector('#home');
+      const aboutSection = document.querySelector('#about');
+      
+      if (homeSection && aboutSection) {
+        const homeBottom = homeSection.getBoundingClientRect().bottom;
+        setShowMobileNav(homeBottom <= 0);
+      }
+
       for (const item of navItems) {
         const section = document.querySelector(item.href);
         if (section) {
@@ -36,8 +45,10 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Mobile: Horizontal navigation at top */}
-      <nav className="lg:hidden bg-yellow-400 text-black p-4 sticky top-0 z-40 shadow-md">
+      {/* Mobile: Horizontal navigation - appears after home section */}
+      <nav className={`lg:hidden bg-yellow-400 text-black p-4 fixed top-0 left-0 right-0 z-40 shadow-md transition-transform duration-300 ${
+        showMobileNav ? 'translate-y-0' : '-translate-y-full'
+      }`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Image
