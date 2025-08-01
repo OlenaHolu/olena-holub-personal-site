@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -29,50 +28,88 @@ export default function Sidebar() {
         }
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
-    <aside className="w-60 bg-yellow-400 text-black min-h-screen flex flex-col items-center">
-      {/* Avatar */}
-      <Image
-        src="/images/olenaCROP.JPG"
-        alt="Olena Holub"
-        width={80}
-        height={80}
-        className="mb-6 w-full shadow-lg"
-      />
-
-      {/* Navigation centered vertically */}
-      <div className="flex-1 flex flex-col justify-center items-center text-sm font-semibold">
-        {/* Top dot */}
-        <div className="w-3 h-3 bg-black rounded-full mb-0.5" />
-
-        {navItems.map((item) => (
-          <div key={item.href} className="flex flex-col items-center">
-            <div className="w-px h-5 bg-black" />
-            <a
-              href={item.href}
-              className={`py-1 transition text-xl ${
-                activeSection === item.href ? 'text-white' : 'text-black hover:text-white'
-              }`}
-            >
-              {item.label}
-            </a>
+    <>
+      {/* Mobile: Horizontal navigation at top */}
+      <nav className="lg:hidden bg-yellow-400 text-black p-4 sticky top-0 z-40 shadow-md">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/olenaCROP.JPG"
+              alt="Olena Holub"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <span className="font-bold text-sm">OLENA HOLUB</span>
           </div>
-        ))}
+          
+          {/* Mobile nav dots */}
+          <div className="flex gap-2">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  activeSection === item.href ? 'bg-white' : 'bg-black/30'
+                }`}
+                title={item.label}
+              />
+            ))}
+          </div>
+        </div>
+      </nav>
 
-        {/* Bottom line and dot */}
-        <div className="w-px h-5 bg-black mt-1" />
-        <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
-      </div>
+      {/* Desktop: Vertical sidebar */}
+      <aside className="hidden lg:flex w-60 bg-yellow-400 text-black min-h-screen flex-col items-center sticky top-0">
+        {/* Avatar */}
+        <div className="p-6">
+          <Image
+            src="/images/olenaCROP.JPG"
+            alt="Olena Holub"
+            width={120}
+            height={120}
+            className="rounded-full shadow-lg"
+          />
+        </div>
 
-      {/* Language switch */}
-      <div className="pt-6 text-sm space-x-2">
-        <a href="/" lang="en">EN</a> / <a href="/" lang="es">ES</a>
-      </div>
-    </aside>
+        {/* Navigation centered vertically */}
+        <div className="flex-1 flex flex-col justify-center items-center text-sm font-semibold">
+          {/* Top dot */}
+          <div className="w-3 h-3 bg-black rounded-full mb-0.5" />
+          
+          {navItems.map((item) => (
+            <div key={item.href} className="flex flex-col items-center">
+              <div className="w-px h-5 bg-black" />
+              <a
+                href={item.href}
+                className={`py-1 px-2 transition text-lg hover:scale-105 ${
+                  activeSection === item.href ? 'text-white font-bold' : 'text-black hover:text-white'
+                }`}
+              >
+                {item.label}
+              </a>
+            </div>
+          ))}
+          
+          {/* Bottom line and dot */}
+          <div className="w-px h-5 bg-black mt-1" />
+          <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
+        </div>
+
+        {/* Language switch */}
+        <div className="pb-6 text-sm">
+          <a href="/" lang="en" className="hover:text-white transition">EN</a>
+          <span className="mx-2">/</span>
+          <a href="/" lang="es" className="hover:text-white transition">ES</a>
+        </div>
+      </aside>
+    </>
   );
 }
