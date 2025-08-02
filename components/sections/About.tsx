@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-8 lg:px-24 py-8 lg:py-16">
-      {/* Title */}
+      
       <div className="flex justify-center mb-8 lg:mb-12">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center px-4 sm:px-6 py-3 sm:py-4 lg:py-6 border-2 border-gray-400 w-full max-w-md lg:max-w-none">
           ABOUT ME
@@ -11,7 +11,7 @@ export default function About() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Intro */}
+        
         <div className="mb-8 lg:mb-12">
           <h2 className="text-xl sm:text-2xl lg:text-3xl py-4 lg:py-6 text-center lg:text-left">
             I'm <strong>Olena Holub,</strong> Full-Stack Web Developer
@@ -24,13 +24,12 @@ export default function About() {
           </p>
         </div>
 
-        {/* Stats and Services - Mobile First Layout */}
         <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-8 lg:items-start">
           
-          {/* Stats Grid - Mobile: full width, Desktop: 2 cols */}
+          {/* Stats Grid - Mobile/Tablet: full width, Desktop: 2 cols */}
           <div className="lg:col-span-2 order-2 lg:order-1 lg:h-full">
             <div className="relative grid grid-cols-2 gap-1 text-yellow-400 text-center bg-black rounded-lg overflow-hidden p-1 lg:h-full">
-              {/* Decorative lines - hidden on mobile for cleaner look */}
+              {/* Decorative lines - hidden on mobile  */}
               <div className="hidden sm:block absolute left-1/2 top-[8%] bottom-[8%] w-0.5 border-l border-dashed border-gray-500 z-0" />
               <div className="hidden sm:block absolute top-1/2 left-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
               <div className="hidden sm:block absolute top-1/2 right-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
@@ -57,7 +56,7 @@ export default function About() {
             </div>
           </div>
 
-          {/* Services - Mobile: full width, Desktop: 1 col */}
+          {/* Services - Mobile/Tablet: full width, Desktop: 1 col */}
           <div className="order-1 lg:order-2 lg:h-full flex flex-col">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-4 lg:mb-6 text-gray-900 text-center lg:text-left">
               What I Do
