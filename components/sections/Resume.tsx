@@ -10,7 +10,7 @@ export default function Resume() {
             <div className="px-8 flex flex-col justify-around min-h-[calc(100vh-15rem)]">
                 <div className="border-b border-gray-300 pb-10">
                     <h3 className="text-xl font-semibold mb-6">EDUCATION</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                         <div>
                             <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">Associate Degree in Web Dev</h4>
                             <p className="text-sm leading-relaxed">
@@ -21,7 +21,7 @@ export default function Resume() {
                             </p>
                         </div>
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">English: Level B2</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">English: Level B2</h4>
                             <p className="text-sm leading-relaxed">
                                 <strong>EOI Castellón de la Plana, Spain</strong><br />
                                 2022 – 2023 <br />
@@ -42,10 +42,13 @@ export default function Resume() {
                 {/* EXPERIENCE BLOCK */}
                 <div className="pb-10">
                     <h3 className="text-xl font-semibold mb-6">EXPERIENCE</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Full Stack Web Developer – Personal Project
+                                Full Stack Web Developer
+                            </h4> <br />
+                            <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
+                                Personal Project
                             </h4>
                             <p className="text-sm leading-relaxed">
                                 <strong>Remote – Mar 2024 – Present</strong><br />
@@ -54,7 +57,10 @@ export default function Resume() {
                         </div>
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Web Developer Intern – ORBYS
+                                Web Developer Intern
+                            </h4> <br />
+                            <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
+                                ORBYS
                             </h4>
                             <p className="text-sm leading-relaxed">
                                 <strong>Castellón, Spain – 2025</strong><br />
@@ -64,7 +70,10 @@ export default function Resume() {
 
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Management, Analis – Banking sector
+                                Management, Analis
+                            </h4> <br />
+                            <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
+                                Banking sector
                             </h4>
                             <p className="text-sm leading-relaxed">
                                 <strong>Zaporizhzhia, Ukraine – 2006 – 2014</strong><br />
