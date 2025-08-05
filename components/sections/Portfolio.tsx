@@ -1,112 +1,226 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import { ExternalLink, ChevronDown, ChevronUp, Github } from 'lucide-react';
+
+const projects = {
+  featured: {
+    title: "FreediveAnalyzer",
+    subtitle: "Personal Project – Full Stack App (2024)",
+    description: "App to log and analyze freediving sessions. Includes dive planning, stats, oxygen tables, and interactive charts for session reviews.",
+    image: "/images/freediveanalyzerCROP.png",
+    technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+    liveUrl: "https://freediveanalyzer.vercel.app",
+    githubUrl: "https://github.com/OlenaHolu/frontend-freedive.git"
+  },
+  others: [
+    {
+      title: "PenyesAPP",
+      subtitle: "Instituto Project",
+      description: "Sorteo de peñas - Next.js project for managing lottery draws with interactive features.",
+      image: "/images/penyesAPP.png",
+      technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+      liveUrl: null,
+      githubUrl: "https://github.com/OlenaHolu/Penyes-app.git"
+    },
+    {
+      title: "SocialAPP", 
+      subtitle: "Instituto Project",
+      description: "Social networking application built with modern web technologies and responsive design.",
+      image: "/images/socialAPP.png",
+      technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+      liveUrl: null,
+      githubUrl: "https://github.com/OlenaHolu/socialapp.git"
+    }
+  ]
+};
 
 export default function Portfolio() {
   const [showOthers, setShowOthers] = useState(false);
 
-  return (
-    <section id="portfolio" className="min-h-screen bg-gray-50 py-20 px-6">
-      <h2 className="text-4xl font-bold text-center mb-12">Portfolio</h2>
-
-      {/* Main Project */}
-      <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 items-center bg-white shadow-md rounded-xl overflow-hidden p-6">
-        <div className="w-full lg:w-1/2">
-          <Image
-            src="/images/freediveanalyzerCROP.png"
-            alt="FreediveAnalyzer"
-            width={600}
-            height={400}
-            className="rounded-md object-cover"
-          />
+  const ProjectCard = ({ project, featured = false }) => (
+    <div className={`bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
+      featured ? 'p-4 sm:p-6' : 'p-4'
+    }`}>
+      <div className={`flex ${featured ? 'flex-col lg:flex-row gap-6 lg:gap-8 items-center' : 'flex-col'}`}>
+        {/* Image */}
+        <div className={`${featured ? 'w-full lg:w-1/2' : 'w-full'} relative group`}>
+          <div className="relative overflow-hidden rounded-lg">
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={featured ? 600 : 500}
+              height={featured ? 400 : 300}
+              className="object-cover w-full h-48 sm:h-56 lg:h-64 transition-transform duration-300 group-hover:scale-105"
+            />
+            {/* Overlay on hover */}
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black p-2 rounded-full transition-colors"
+                  title="View Live"
+                >
+                  <ExternalLink size={20} />
+                </a>
+              )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white hover:bg-gray-300 text-black p-2 rounded-full transition-colors"
+                  title="View Code"
+                >
+                  <Github size={20} />
+                </a>
+              )}
+            </div>
+          </div>
         </div>
-        <div className="w-full lg:w-1/2 space-y-4">
-          <h3 className="text-2xl font-bold">FreediveAnalyzer</h3>
-          <p className="text-sm text-gray-500">Personal Project – Full Stack App (2024)</p>
-          <p className="text-gray-700">
-            App to log and analyze freediving sessions. Includes dive planning, stats,
-            oxygen tables, and interactive charts for session reviews.
+
+        {/* Content */}
+        <div className={`${featured ? 'w-full lg:w-1/2' : 'w-full'} space-y-3 sm:space-y-4 ${featured ? 'mt-4 lg:mt-0' : 'mt-4'} flex flex-col ${!featured ? 'h-full' : ''}`}>
+          <div>
+            <h3 className={`${featured ? 'text-xl sm:text-2xl lg:text-3xl' : 'text-lg sm:text-xl'} font-bold text-gray-900`}>
+              {project.title}
+            </h3>
+            <p className="text-xs sm:text-sm text-yellow-600 font-medium mt-1">
+              {project.subtitle}
+            </p>
+          </div>
+          
+          <p className={`text-gray-700 leading-relaxed ${featured ? 'text-sm sm:text-base' : 'text-sm'} ${!featured ? 'flex-1' : ''}`}>
+            {project.description}
           </p>
-          <div className="flex flex-wrap gap-2 text-sm">
-            {['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'].map((tech) => (
+          
+          {/* Technologies */}
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+            {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full"
+                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
+                  featured 
+                    ? 'bg-yellow-100 text-yellow-800' 
+                    : 'bg-gray-100 text-gray-700'
+                }`}
               >
                 {tech}
               </span>
             ))}
           </div>
-          <a
-            href="https://freediveanalyzer.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block mt-4 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-4 py-2 rounded-full transition"
+          
+          {/* Action Buttons */}
+          {(project.liveUrl || project.githubUrl) && (
+            <div className="flex flex-wrap gap-3 pt-2">
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 ${
+                    featured
+                      ? 'bg-yellow-400 hover:bg-yellow-500 text-black shadow-md hover:shadow-lg'
+                      : 'bg-gray-900 hover:bg-gray-800 text-white'
+                  }`}
+                >
+                  <ExternalLink size={16} />
+                  <span className="text-sm">View Live</span>
+                </a>
+              )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
+                >
+                  <Github size={16} />
+                  <span className="text-sm">View Code</span>
+                </a>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+
+  return (
+    <section id="portfolio" className="min-h-screen bg-white px-4 sm:px-12 lg:px-24 py-5">
+      {/* Header */}
+      <div className="flex justify-center mb-8 lg:mb-12">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center px-4 sm:px-6 py-3 sm:py-4 lg:py-6 border-2 border-gray-400 w-full max-w-md lg:max-w-none">
+          PORTFOLIO
+        </h2>
+      </div>
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
+            Explore my recent projects showcasing modern web development with clean code and great user experience.
+          </p>
+        </div>
+
+        {/* Featured Project */}
+        <div className="mb-8 sm:mb-12 lg:mb-16">
+          <ProjectCard project={projects.featured} featured={true} />
+        </div>
+
+        {/* Toggle Button */}
+        <div className="text-center mb-8 sm:mb-10">
+          <button
+            onClick={() => setShowOthers(!showOthers)}
+            className="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-700 font-semibold transition-colors duration-200 group"
           >
-            View Live
-          </a>
+            <span>{showOthers ? 'Hide Other Projects' : 'View More Projects'}</span>
+            {showOthers ? (
+              <ChevronUp size={20} className="transition-transform group-hover:-translate-y-0.5" />
+            ) : (
+              <ChevronDown size={20} className="transition-transform group-hover:translate-y-0.5" />
+            )}
+          </button>
+        </div>
+
+        {/* Other Projects */}
+        <div className={`transition-all duration-500 ease-in-out ${
+          showOthers 
+            ? 'opacity-100 max-h-none transform translate-y-0' 
+            : 'opacity-0 max-h-0 overflow-hidden transform -translate-y-4'
+        }`}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
+            {projects.others.map((project, index) => (
+              <div
+                key={project.title}
+                className="animate-fade-in-up"
+                style={{
+                  animationDelay: showOthers ? `${index * 0.1}s` : '0s'
+                }}
+              >
+                <ProjectCard project={project} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
-      {/* Toggle Button */}
-      <div className="text-center mt-10">
-        <button
-          onClick={() => setShowOthers(!showOthers)}
-          className="text-yellow-600 hover:text-yellow-800 font-medium underline"
-        >
-          {showOthers ? 'Hide other projects' : '+ More Projects'}
-        </button>
-      </div>
-
-      {/* Other Projects */}
-      {showOthers && (
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden p-4 flex flex-col">
-              <Image
-                src="/images/penyesAPP.png"
-                alt={"PenyesAPP"}
-                width={500}
-                height={300}
-                className="rounded-md object-cover mb-4"
-              />
-              <h4 className="text-xl font-bold">Instituto Project - PenyesAPP</h4>
-              <p className="text-sm text-gray-500 mb-2">Sorteo de peñas</p>
-              <p className="text-gray-700 mb-3">Next.js project</p>
-              <div className="flex flex-wrap gap-2 text-sm mt-auto">
-                {['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden p-4 flex flex-col">
-              <Image
-                src="/images/socialAPP.png"
-                alt={"SocialAPP"}
-                width={500}
-                height={300}
-                className="rounded-md object-cover mb-4"
-              />
-              <h4 className="text-xl font-bold">Instituto Project - PenyesAPP</h4>
-              <p className="text-sm text-gray-500 mb-2">Sorteo de peñas</p>
-              <p className="text-gray-700 mb-3">Next.js project</p>
-              <div className="flex flex-wrap gap-2 text-sm mt-auto">
-                {['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-gray-100 text-gray-700 px-2 py-1 rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-        </div>
-      )}
+      <style jsx>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.6s ease-out forwards;
+        }
+      `}</style>
     </section>
   );
 }
