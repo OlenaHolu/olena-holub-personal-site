@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-8 lg:px-24 py-8 lg:py-16">
+    <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-5">
       
-      <div className="flex justify-center mb-8 lg:mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center px-4 sm:px-6 py-3 sm:py-4 lg:py-6 border-2 border-gray-400 w-full max-w-md lg:max-w-none">
+      <div className="flex justify-center mb-12">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
           ABOUT ME
         </h2>
       </div>
