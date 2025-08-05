@@ -37,7 +37,7 @@ const projects = {
       title: "SocialAPP", 
       subtitle: "Instituto Project",
       description: "Social networking application built with modern web technologies and responsive design.",
-      image: "/images/socialAPP.png",
+      image: "/images/socialApp.png",
       technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
       liveUrl: null,
       githubUrl: "https://github.com/OlenaHolu/socialapp.git"
