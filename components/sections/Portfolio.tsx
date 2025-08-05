@@ -3,6 +3,16 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { ExternalLink, ChevronDown, ChevronUp, Github } from 'lucide-react';
 
+interface Project {
+  title: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl: string | null;
+  githubUrl: string | null;
+}
+
 const projects = {
   featured: {
     title: "FreediveAnalyzer",
@@ -38,7 +48,7 @@ const projects = {
 export default function Portfolio() {
   const [showOthers, setShowOthers] = useState(false);
 
-  const ProjectCard = ({ project, featured = false }) => (
+  const ProjectCard = ({ project, featured = false }: { project: Project; featured?: boolean}) => (
     <div className={`bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
       featured ? 'p-4 sm:p-6' : 'p-4'
     }`}>
