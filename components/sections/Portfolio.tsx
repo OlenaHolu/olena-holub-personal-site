@@ -19,7 +19,7 @@ const projects = {
     subtitle: "Personal Project – Full Stack App (2024)",
     description: "App to log and analyze freediving sessions. Includes dive planning, stats, oxygen tables, and interactive charts for session reviews.",
     image: "/images/freediveanalyzerCROP.png",
-    technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+    technologies: ['React', 'Laravel', 'Tailwind', 'Chart.js'],
     liveUrl: "https://frontend-freedive.vercel.app/",
     githubUrl: "https://github.com/OlenaHolu/frontend-freedive.git"
   },
@@ -159,13 +159,14 @@ export default function Portfolio() {
   );
 
   return (
-    <section id="portfolio" className="min-h-screen bg-white px-4 sm:px-12 lg:px-24 py-5">
-      {/* Header */}
-      <div className="flex justify-center mb-8 lg:mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center px-4 sm:px-6 py-3 sm:py-4 lg:py-6 border-2 border-gray-400 w-full max-w-md lg:max-w-none">
+    <section id="portfolio" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-5">
+     
+      <div className="flex justify-center mb-12">
+        <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
           PORTFOLIO
         </h2>
       </div>
+
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">

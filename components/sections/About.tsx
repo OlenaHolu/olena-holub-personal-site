@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-5">
       
       <div className="flex justify-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
+        <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
           ABOUT ME
         </h2>
       </div>
