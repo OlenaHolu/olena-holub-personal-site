@@ -20,7 +20,7 @@ const projects = {
     description: "App to log and analyze freediving sessions. Includes dive planning, stats, oxygen tables, and interactive charts for session reviews.",
     image: "/images/freediveanalyzerCROP.png",
     technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
-    liveUrl: "https://freediveanalyzer.vercel.app",
+    liveUrl: "https://frontend-freedive.vercel.app/",
     githubUrl: "https://github.com/OlenaHolu/frontend-freedive.git"
   },
   others: [
