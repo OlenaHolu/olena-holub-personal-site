@@ -6,6 +6,7 @@ import Portfolio from '../components/sections/Portfolio';
 import Recommendation from '../components/sections/Recommendation';
 import Contact from '../components/sections/Contact';
 import Sidebar from '@/components/Sidebar';
+import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
@@ -84,6 +85,8 @@ export default function Home() {
       <div className="block lg:hidden">
         <SideIcons />
       </div>
+      <Footer />
     </div>
+    
   );
 }
