@@ -10,7 +10,7 @@ export default function Footer() {
                 {/* Social Icons */}
                 <div className="flex space-x-6">
                     <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/OlenaHolu"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-800 transition"
@@ -19,7 +19,7 @@ export default function Footer() {
                         <Github size={20} />
                     </a>
                     <a
-                        href="https://linkedin.com/in/yourusername"
+                        href="https://www.linkedin.com/in/holub-olena/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-gray-800 transition"
@@ -36,15 +36,15 @@ export default function Footer() {
                     </a>
                 </div>
 
-                {/* Footer Text */}
                 <div className="text-center">
                     <p>&copy; {new Date().getFullYear()} Olena Holub. All rights reserved.</p>
                     <p className="text-xs text-gray-500 mt-1">
                         Designed & developed by Olena Holub
                     </p>
-
                 </div>
+
             </div>
+
             <div className="block sm:hidden h-24" />
         </footer>
     );
