@@ -6,7 +6,13 @@ export default function Recommendation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <section id="recommendation" className="min-h-screen py-20 px-6 bg-white text-gray-800">
+    <section id="recommendation" className="min-h-screen bg-white px-4 sm:px-12 lg:px-24 py-5">
+      <div className="flex justify-center mb-12">
+        <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
+          RECOMMENDATIONS
+        </h2>
+      </div>
+
       <div className="max-w-4xl mx-auto">
         {/* Texto de recomendación */}
         <div className="bg-gray-50 border-l-4 border-yellow-400 pl-6 pr-4 py-8 rounded-md shadow-sm relative">
