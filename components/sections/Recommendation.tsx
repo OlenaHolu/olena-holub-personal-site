@@ -15,27 +15,27 @@ export default function Recommendation() {
 
       <div className="max-w-4xl mx-auto">
         {/* Texto de recomendación */}
-        <div className="bg-gray-50 border-l-4 border-yellow-400 pl-6 pr-4 py-8 rounded-md shadow-sm relative">
-          <p className="text-sm text-gray-500 italic mb-2">La Vall d’Uixó, 17 de julio de 2025</p>
-          <p className="text-lg leading-relaxed mb-4">
-            “Me complace recomendar a <strong>Olena Holub</strong>, quien ha sido alumna del ciclo de Desarrollo de Aplicaciones Web.
-            Durante su formación en nuestro centro, demostró ser una estudiante ejemplar con actitud proactiva,
-            excelente capacidad de aprendizaje y compromiso con su desarrollo profesional.”
-          </p>
-          <p className="text-lg leading-relaxed mb-4">
-            “Destaca por su curiosidad, autonomía para resolver problemas y pasión genuina por el desarrollo de software.
-            Obtuvo una <strong>matrícula de honor</strong> y mostró gran habilidad para trabajar en equipo y asumir responsabilidades.”
-          </p>
-          <p className="mt-6 font-semibold">María Carmen Gómez Cano</p>
-          <p className="text-sm">Tutora del ciclo DAW – IES Benigasló (Castellón)</p>
+        <div className="bg-gray-50 border-l-4 border-yellow-400 pl-6 pr-6 py-8 rounded-xl shadow-md relative">
+          <p className="text-sm text-gray-500 italic mb-3">La Vall d’Uixó, July 18th, 2025</p>
 
-          {/* Botón con ícono */}
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            “It is my pleasure to recommend <strong>Olena Holub</strong>, a student in the Web Application Development program (CFGS DAW) at our institution during 2023–2025. She has proven to be committed, responsible, and highly capable, with excellent academic results and a remarkable ability to apply her knowledge in real-world projects.”
+          </p>
+
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            “She stands out for her curiosity, autonomy, and teamwork skills. Her final project received the highest grade, and she consistently went beyond classroom expectations. I’m confident she will be an asset to any professional environment.”
+          </p>
+
+          <p className="mt-6 font-semibold text-gray-800">María Carmen Gómez Cano</p>
+          <p className="text-sm text-gray-600">DAW Program Tutor – IES Benigasló (Castellón)</p>
+
+          {/* Botón para abrir modal */}
           <button
             onClick={() => setIsOpen(true)}
-            className="mt-4 inline-flex items-center gap-2 text-sm text-yellow-600 underline hover:text-yellow-800 transition"
+            className="mt-6 inline-flex items-center gap-2 text-sm text-yellow-600 underline hover:text-yellow-800 transition"
           >
-            <FileText size={16} />
-            Ver carta de recomendación escaneada
+            <FileText size={18} />
+            Read full letter
           </button>
         </div>
       </div>
