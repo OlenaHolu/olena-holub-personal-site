@@ -1,4 +1,5 @@
 'use client';
+
 import { useState } from 'react';
 import Swal from 'sweetalert2';
 
@@ -6,11 +7,13 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const valideteEmail = (email: string) =>
+  const validateEmail = (email: string) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -19,89 +22,101 @@ export default function ContactForm() {
     if (!form.name || !form.email || !form.message) {
       Swal.fire({
         icon: 'error',
-        title: 'Error',
+        title: 'Missing Fields',
         text: 'All fields are required.',
       });
       return;
     }
 
-    if (!valideteEmail(form.email)) {
+    if (!validateEmail(form.email)) {
       Swal.fire({
         icon: 'error',
-        title: 'Error',
+        title: 'Invalid Email',
         text: 'Please enter a valid email address.',
       });
       return;
     }
 
     try {
-    setStatus('Sending...');
+      setStatus('Sending...');
 
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form),
-    });
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
 
-    if (res.ok) {
+      if (res.ok) {
         Swal.fire({
           icon: 'success',
-          title: 'Success',
-          text: 'Your message has been sent successfully!',
+          title: 'Message Sent',
+          text: 'Thanks! I will get back to you shortly.',
         });
-      setStatus('Message sent successfully!');
-      setForm({ name: '', email: '', message: '' });
-    } else {
+        setForm({ name: '', email: '', message: '' });
+        setStatus('');
+      } else {
         Swal.fire({
           icon: 'error',
           title: 'Error',
-            text: 'There was an error sending your message. Please try again later.',
+          text: 'Something went wrong. Please try again later.',
         });
-      setStatus('Failed to send message.');
+        setStatus('');
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Unexpected Error',
+        text: 'Please try again later.',
+      });
+      setStatus('');
     }
-  } catch (error) {
-    Swal.fire({
-      icon: 'error',
-      title: 'Error',
-      text: 'An unexpected error occurred. Please try again later.',
-    });
-    setStatus('An unexpected error occurred.');
-  }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
-      <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        value={form.name}
-        onChange={handleChange}
-        required
-        className="w-full border p-2 rounded"
-      />
-      <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        value={form.email}
-        onChange={handleChange}
-        required
-        className="w-full border p-2 rounded"
-      />
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="grid gap-4 sm:grid-cols-2">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={form.name}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={form.email}
+          onChange={handleChange}
+          required
+          className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
+      </div>
+
       <textarea
         name="message"
         placeholder="Your Message"
-        rows={5}
+        rows={3}
         value={form.message}
         onChange={handleChange}
         required
-        className="w-full border p-2 rounded"
+        className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
       />
-      <button type="submit" className="bg-yellow-400 text-white px-4 py-2 rounded">
-        Send
-      </button>
-      <p className="text-sm text-green-600">{status}</p>
+
+      <div className="flex justify-end">
+        <button
+          type="submit"
+          className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
+        >
+          Send Message
+        </button>
+      </div>
+
+      {status && (
+        <p className="text-sm text-gray-600 mt-2 text-right italic">{status}</p>
+      )}
     </form>
   );
 }

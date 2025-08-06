@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import ContactForm from '../ContactForm';
 
 export default function Contact() {
   return (
@@ -22,40 +23,56 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-6 xl:gap-10 xl:items-start">
-          {/* Contact Item - Email */}
-          <div className="flex flex-col justify-center items-center xl:items-start">
-            <div className="flex items-center gap-4 xl:gap-6 p-4 xl:p-8 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none w-full">
-              <Image
-                src="/images/contact/monitor.png"
-                alt="Email Icon"
-                width={160}
-                height={160}
-                className="w-24 h-24 xl:w-40 xl:h-40 flex-shrink-0"
-              />
-              <div className="text-gray-700 text-center md:text-left">
-                <p className="font-bold text-base md:text-lg xl:text-2xl">olenaholub.dev@gmail.com</p>
-              </div>
+        {/* Contact items */}
+        <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8">
+          {/* Email */}
+          <div className="flex items-center bg-white rounded-2xl shadow-md p-6 lg:p-8 transition hover:shadow-xl">
+            <Image
+              src="/images/contact/monitor.png"
+              alt="Email Icon"
+              width={160}
+              height={160}
+              className="w-20 h-20 xl:w-32 xl:h-32 object-contain"
+            />
+            <div className="ml-6 text-left">
+              <a
+                href="mailto:olenaholub.dev@gmail.com?subject=I'd like to work with you&body=Hello!"
+                className="text-lg xl:text-2xl font-semibold text-gray-800"
+              >
+                olenaholub.dev@gmail.com
+              </a>
+              <p className="text-sm xl:text-base text-gray-500 mt-1">Email me anytime</p>
             </div>
           </div>
 
-          {/* Contact Item - Phone */}
-          <div className="flex flex-col justify-center items-center xl:items-start">
-            <div className="flex items-center gap-4 xl:gap-6 p-4 xl:p-8 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none w-full">
-              <Image
-                src="/images/contact/phone.png"
-                alt="Phone Icon"
-                width={160}
-                height={160}
-                className="w-24 h-24 xl:w-40 xl:h-40 flex-shrink-0"
-              />
-              <div className="text-gray-700 text-center md:text-left">
-                <p className="font-bold text-base md:text-lg xl:text-2xl">+34643448065</p>
-              </div>
+          {/* Phone */}
+          <div className="flex items-center bg-white rounded-2xl shadow-md p-6 lg:p-8 transition hover:shadow-xl">
+            <Image
+              src="/images/contact/phone.png"
+              alt="Phone Icon"
+              width={160}
+              height={160}
+              className="w-20 h-20 xl:w-32 xl:h-32 object-contain"
+            />
+            <div className="ml-6 text-left">
+              <a
+                href="tel:+34643448065"
+                className="text-lg xl:text-2xl font-semibold text-gray-800"
+              >
+                +34 643 448 065
+              </a>
+              <p className="text-sm xl:text-base text-gray-500 mt-1">Call or message me</p>
             </div>
           </div>
         </div>
 
+        {/* Contact Form */}
+        <div className="mt-12 lg:mt-16">
+
+          <div className="bg-white rounded-xl shadow-md p-6 sm:p-8">
+            <ContactForm />
+          </div>
+        </div>
 
       </div>
     </section>
