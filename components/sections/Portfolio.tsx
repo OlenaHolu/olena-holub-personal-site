@@ -17,7 +17,7 @@ const projects = {
   featured: {
     title: "FreediveAnalyzer",
     subtitle: "Personal Project – Full Stack App (2024)",
-    description: "App to log and analyze freediving sessions. Includes dive planning, stats, oxygen tables, and interactive charts for session reviews.",
+    description: "FreediveAnalyzer is a full-stack web platform for logging and analyzing freediving sessions, designed with scalability and modularity in mind. Built with a React SPA frontend and a Laravel RESTful API backend, it supports multilingual interfaces (i18next), secure JWT-based authentication (email/password and Google OAuth), and real-time data visualization via Recharts. The system enables manual and bulk dive imports (.xml/.sml), tracks dive metrics, and delivers performance insights through dynamic charts and oxygen recovery ratios. Deployed with CI/CD pipelines (GitHub + Docker + Vercel), integrated with PostgreSQL, and optimized for cross-device responsiveness.",
     image: "/images/freediveanalyzerCROP.png",
     technologies: ['React', 'Laravel', 'Tailwind', 'Chart.js'],
     liveUrl: "https://frontend-freedive.vercel.app/",
