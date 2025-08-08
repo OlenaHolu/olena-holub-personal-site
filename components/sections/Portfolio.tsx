@@ -26,16 +26,16 @@ const projects = {
   others: [
     {
       title: "PenyesAPP",
-      subtitle: "Instituto Project",
-      description: "Sorteo de peñas - Next.js project for managing lottery draws with interactive features.",
+      subtitle: "Academic Project – Full Stack Platform (2025)",
+      description: "Web platform designed for managing local festival groups ('peñas'), enabling administrators to oversee users, peñas, payments, and fair draw systems, while users can join groups, manage their profile, and track payments. Includes role-based access, a dynamic cadafal draw implemented in React, and an integrated wallet for fee management.",
       image: "/images/penyesAPP.png",
-      technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+      technologies: ['Laravel', 'Blade', 'Tailwind', 'MySQL', 'React', 'Vite', 'Axios'],
       liveUrl: null,
       githubUrl: "https://github.com/OlenaHolu/Penyes-app.git"
     },
     {
-      title: "SocialAPP", 
-      subtitle: "Instituto Project",
+      title: "SocialAPP",
+      subtitle: "Academic Project",
       description: "Social networking application built with modern web technologies and responsive design.",
       image: "/images/socialApp.png",
       technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
@@ -48,10 +48,9 @@ const projects = {
 export default function Portfolio() {
   const [showOthers, setShowOthers] = useState(false);
 
-  const ProjectCard = ({ project, featured = false }: { project: Project; featured?: boolean}) => (
-    <div className={`bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
-      featured ? 'p-4 sm:p-6' : 'p-4'
-    }`}>
+  const ProjectCard = ({ project, featured = false }: { project: Project; featured?: boolean }) => (
+    <div className={`bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${featured ? 'p-4 sm:p-6' : 'p-4'
+      }`}>
       <div className={`flex ${featured ? 'flex-col lg:flex-row gap-6 lg:gap-8 items-center' : 'flex-col'}`}>
         {/* Image */}
         <div className={`${featured ? 'w-full lg:w-1/2' : 'w-full'} relative group`}>
@@ -101,27 +100,26 @@ export default function Portfolio() {
               {project.subtitle}
             </p>
           </div>
-          
+
           <p className={`text-gray-700 leading-relaxed ${featured ? 'text-sm sm:text-base' : 'text-sm'} ${!featured ? 'flex-1' : ''}`}>
             {project.description}
           </p>
-          
+
           {/* Technologies */}
           <div className="flex flex-wrap gap-1.5 sm:gap-2">
             {project.technologies.map((tech) => (
               <span
                 key={tech}
-                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${
-                  featured 
-                    ? 'bg-yellow-100 text-yellow-800' 
+                className={`px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium ${featured
+                    ? 'bg-yellow-100 text-yellow-800'
                     : 'bg-gray-100 text-gray-700'
-                }`}
+                  }`}
               >
                 {tech}
               </span>
             ))}
           </div>
-          
+
           {/* Action Buttons */}
           {(project.liveUrl || project.githubUrl) && (
             <div className="flex flex-wrap gap-3 pt-2">
@@ -130,11 +128,10 @@ export default function Portfolio() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 ${
-                    featured
+                  className={`inline-flex items-center gap-2 font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95 ${featured
                       ? 'bg-yellow-400 hover:bg-yellow-500 text-black shadow-md hover:shadow-lg'
                       : 'bg-gray-900 hover:bg-gray-800 text-white'
-                  }`}
+                    }`}
                 >
                   <ExternalLink size={16} />
                   <span className="text-sm">View Live</span>
@@ -160,7 +157,7 @@ export default function Portfolio() {
 
   return (
     <section id="portfolio" className="min-h-screen bg-gray-100 px-4 sm:px-12 lg:px-24 py-5">
-     
+
       <div className="flex justify-center mb-12">
         <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
           PORTFOLIO
@@ -195,11 +192,10 @@ export default function Portfolio() {
         </div>
 
         {/* Other Projects */}
-        <div className={`transition-all duration-500 ease-in-out ${
-          showOthers 
-            ? 'opacity-100 max-h-none transform translate-y-0' 
+        <div className={`transition-all duration-500 ease-in-out ${showOthers
+            ? 'opacity-100 max-h-none transform translate-y-0'
             : 'opacity-0 max-h-0 overflow-hidden transform -translate-y-4'
-        }`}>
+          }`}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
             {projects.others.map((project, index) => (
               <div
