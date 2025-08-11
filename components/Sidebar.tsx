@@ -64,6 +64,7 @@ export default function Sidebar() {
           
           {/* Mobile nav dots */}
           <div className="flex gap-2">
+            <LanguageSwitcher />
             {navItems.map((item) => (
               <a
                 key={item.href}
