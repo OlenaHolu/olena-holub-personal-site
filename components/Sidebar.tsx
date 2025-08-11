@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
   { label: 'Home', href: '#home' },
@@ -114,7 +115,7 @@ export default function Sidebar() {
           <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
         </div>
 
-        
+        <LanguageSwitcher />
       </aside>
     </>
   );
