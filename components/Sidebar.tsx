@@ -114,12 +114,7 @@ export default function Sidebar() {
           <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
         </div>
 
-        {/* Language switch */}
-        <div className="pb-6 text-sm">
-          <a href="/" lang="en" className="hover:text-white transition">EN</a>
-          <span className="mx-2">/</span>
-          <a href="/" lang="es" className="hover:text-white transition">ES</a>
-        </div>
+        
       </aside>
     </>
   );
