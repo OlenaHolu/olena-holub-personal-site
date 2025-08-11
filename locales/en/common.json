@@ -1,16 +1,26 @@
 {
-    "title": "Olena Holub – Full Stack Developer",
-    "description": "Personal website and portfolio of Olena Holub, a web developer based in Spain.",
-    "projectsTitle": "Projects – Olena Holub",
-    "projectsDescription": "Explore the professional and personal projects of Olena Holub.",
-    "contactTitle": "Contact – Olena Holub",
-    "contactDescription": "Get in touch with Olena Holub through this contact page.",
-    "nav": {
-      "home": "Home",
-      "projects": "Projects",
-      "contact": "Contact"
+  "about": {
+    "sectionTitle": "ABOUT ME",
+    "heroTitle": "I'm <1>Olena Holub</1>, Full-Stack Web Developer",
+    "heroDescription": "specializing in modern technologies like <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> and <1>Symfony</1>. I build scalable, elegant applications with clean code and great user experience.Currently based in Spain and open to exciting remote or on-site opportunities.<0></0><0></0>My deployment experience includes platforms like <1>Vercel</1>, <1>Railway</1>, and <1>AWS</1>. I also have solid experience with object-oriented languages like <1>Java</1> and <1>Python</1>, and I'm always committed to continuous learning and improving my development skills.",
+    "stats": {
+      "years": "YEARS OF TRAINING",
+      "projects": "PROJECTS COMPLETED",
+      "dedication": "DEDICATION",
+      "languages": "LANGUAGES SPOKEN"
     },
-    "footer": "All rights reserved © Olena Holub",
-    "intro": "Hi, I'm Olena Holub, a full stack developer in Spain."
+    "servicesTitle": "What I Do",
+    "service1": {
+      "title": "Full-Stack Web Development",
+      "desc": "Building modern, responsive applications using React, Next.js, Node.js, PHP, Laravel & Symfony."
+    },
+    "service2": {
+      "title": "API Design & Integration",
+      "desc": "Creating and consuming RESTful APIs, ensuring secure, scalable data flow across frontend and backend."
+    },
+    "service3": {
+      "title": "Deployment & Continuous Learning",
+      "desc": "Fast and reliable deployment using Vercel and Railway. Always expanding my knowledge with new tools and tech."
+    }
   }
-  
+}

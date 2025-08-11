@@ -1,16 +1,31 @@
 {
-    "title": "Olena Holub – Desarrolladora Full Stack",
-    "description": "Sitio web personal y portafolio de Olena Holub, desarrolladora web en España.",
-    "projectsTitle": "Proyectos – Olena Holub",
-    "projectsDescription": "Explora los proyectos personales y profesionales de Olena Holub.",
-    "contactTitle": "Contacto – Olena Holub",
-    "contactDescription": "Ponte en contacto con Olena Holub a través de esta página.",
-    "nav": {
-      "home": "Inicio",
-      "projects": "Proyectos",
-      "contact": "Contacto"
+  "about": {
+    "sectionTitle": "SOBRE MÍ",
+    "heroTitle": "Soy <1>Olena Holub</1>, Desarrolladora Web Full-Stack",
+    "heroLead": "especializada en tecnologías modernas como <1>JavaScript</1>, <3>Next.js</3>, <5>PHP</5>, <7>Laravel</7> y <9>Symfony</9>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario. Actualmente resido en España y estoy abierta a oportunidades remotas o presenciales.",
+    "deployment": "Mi experiencia de despliegue incluye plataformas como <1>Vercel</1>, <3>Railway</3> y <5>AWS</5>. También tengo una base sólida en lenguajes orientados a objetos como <7>Java</7> y <9>Python</9>, y estoy comprometida con el aprendizaje continuo.",
+    "stats": {
+      "years": { "value": "2", "label": "AÑOS DE FORMACIÓN" },
+      "projects": { "value": "5+", "label": "PROYECTOS COMPLETADOS" },
+      "dedication": { "value": "100%", "label": "DEDICACIÓN" },
+      "languages": { "value": "🇺🇦 🇷🇺 🇪🇸 🇬🇧", "label": "IDIOMAS" }
     },
-    "footer": "Todos los derechos reservados © Olena Holub",
-    "intro": "Hola, soy Olena Holub, desarrolladora full stack en España."
+    "services": {
+      "title": "Qué Hago",
+      "items": [
+        {
+          "title": "Desarrollo Web Full-Stack",
+          "desc": "Construcción de aplicaciones modernas y responsive con React, Next.js, Node.js, PHP, Laravel y Symfony."
+        },
+        {
+          "title": "Diseño e Integración de APIs",
+          "desc": "Creación y consumo de APIs REST, garantizando flujos de datos seguros y escalables entre frontend y backend."
+        },
+        {
+          "title": "Despliegue y Aprendizaje Continuo",
+          "desc": "Despliegues rápidos y fiables con Vercel y Railway. Siempre ampliando conocimientos con nuevas herramientas y tecnologías."
+        }
+      ]
+    }
   }
-  
+}

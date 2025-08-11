@@ -1,16 +1,31 @@
 {
-    "title": "Olena Holub – Desarrolladora Full Stack",
-    "description": "Sitio web personal y portafolio de Olena Holub, desarrolladora web en España.",
-    "projectsTitle": "Proyectos – Olena Holub",
-    "projectsDescription": "Explora los proyectos personales y profesionales de Olena Holub.",
-    "contactTitle": "Contacto – Olena Holub",
-    "contactDescription": "Ponte en contacto con Olena Holub a través de esta página.",
-    "nav": {
-      "home": "Inicio",
-      "projects": "Proyectos",
-      "contact": "Contacto"
+  "about": {
+    "sectionTitle": "ПРО МЕНЕ",
+    "heroTitle": "Я — <1>Олена Голуб</1>, Full-Stack веб-розробниця",
+    "heroLead": "спеціалізуюся на сучасних технологіях, таких як <1>JavaScript</1>, <3>Next.js</3>, <5>PHP</5>, <7>Laravel</7> та <9>Symfony</9>. Створюю масштабовані й елегантні застосунки з чистим кодом і чудовим UX. Наразі проживаю в Іспанії та відкрита до віддалених або офлайн-можливостей.",
+    "deployment": "Досвід деплою: <1>Vercel</1>, <3>Railway</3>, <5>AWS</5>. Також маю добру базу в ООП-мовах <7>Java</7> і <9>Python</9> та постійно вдосконалюю навички.",
+    "stats": {
+      "years": { "value": "2", "label": "РОКИ НАВЧАННЯ" },
+      "projects": { "value": "5+", "label": "ЗАВЕРШЕНИХ ПРОЄКТІВ" },
+      "dedication": { "value": "100%", "label": "ВІДДАНІСТЬ" },
+      "languages": { "value": "🇺🇦 🇷🇺 🇪🇸 🇬🇧", "label": "МОВИ" }
     },
-    "footer": "Todos los derechos reservados © Olena Holub",
-    "intro": "Hola, soy Olena Holub, desarrolladora full stack en España."
+    "services": {
+      "title": "Чим я займаюся",
+      "items": [
+        {
+          "title": "Full-Stack розробка",
+          "desc": "Створення сучасних адаптивних застосунків з використанням React, Next.js, Node.js, PHP, Laravel і Symfony."
+        },
+        {
+          "title": "Проєктування та інтеграція API",
+          "desc": "Розробка та споживання REST API, забезпечення безпечних і масштабованих потоків даних між фронтендом і бекендом."
+        },
+        {
+          "title": "Деплой і безперервне навчання",
+          "desc": "Швидкий і надійний деплой із Vercel та Railway. Постійне опанування нових інструментів і технологій."
+        }
+      ]
+    }
   }
-  
+}
