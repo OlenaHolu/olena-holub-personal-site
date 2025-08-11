@@ -1,11 +1,14 @@
+'use client';
+
 import {
   Home,
   User,
   Briefcase,
   LayoutGrid,
   MessageCircle,
-  Send,
+  Send
 } from 'lucide-react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
   { icon: Home, label: 'Home', href: '#home' },
@@ -13,15 +16,15 @@ const navItems = [
   { icon: Briefcase, label: 'Resume', href: '#resume' },
   { icon: LayoutGrid, label: 'Portfolio', href: '#portfolio' },
   { icon: MessageCircle, label: 'Recommendation', href: '#recommendation' },
-  { icon: Send, label: 'Contact', href: '#contact' },
+  { icon: Send, label: 'Contact', href: '#contact' }
 ];
 
 export default function SideIcons() {
   return (
     <>
-      {/* Mobile: Bottom fixed navigation */}
+      {/* Mobile: Bottom fixed navigation with Language dropdown */}
       <div className="lg:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-        <div className="flex gap-2 bg-yellow-400 p-2 rounded-full shadow-lg">
+        <div className="flex items-center gap-2 bg-yellow-400 px-2 py-2 rounded-full shadow-lg">
           {navItems.map((item) => {
             const Icon = item.icon;
             return (
@@ -35,11 +38,13 @@ export default function SideIcons() {
               </a>
             );
           })}
+          {/* Language dropdown (abre hacia arriba) */}
+          <LanguageSwitcher mode="icon" dropdownUp />
         </div>
       </div>
 
-      {/* Desktop: Right side vertical icons */}
-      <div className="hidden lg:block fixed right-4 top-1/2 -translate-y-1/2 space-y-4 z-50">
+      {/* Desktop: Right side vertical icons + full language switcher */}
+      <div className="hidden lg:flex flex-col items-center gap-4 fixed right-4 top-1/2 -translate-y-1/2 z-50">
         {navItems.map((item) => {
           const Icon = item.icon;
           return (
@@ -53,6 +58,9 @@ export default function SideIcons() {
             </a>
           );
         })}
+        <div className="bg-yellow-400 p-2.5 rounded-full shadow-md hover:scale-110 hover:bg-yellow-500 transition">
+          <LanguageSwitcher mode="full" />
+        </div>
       </div>
     </>
   );
