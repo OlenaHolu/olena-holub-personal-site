@@ -1,4 +1,11 @@
 {
+  "home": {
+    "greeting": "¡HOLA!",
+    "name": "SOY <1>OLENA</1>",
+    "role": "Desarrolladora Web Full Stack",
+    "description": "Desarrolladora web full-stack creativa y orientada al detalle, especializada en tecnologías modernas como <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> y <1>Symfony</1>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario.<0></0>Actualmente ubicada en España y abierta a oportunidades emocionantes remotas o presenciales.",
+    "cta": "MÁS SOBRE MÍ"
+  },
   "about": {
     "sectionTitle": "SOBRE MÍ",
     "heroTitle": "Soy <1>Olena Holub</1>, Desarrolladora Web Full-Stack",

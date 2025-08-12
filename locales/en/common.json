@@ -1,4 +1,11 @@
 {
+  "home": {
+    "greeting": "HI THERE!",
+    "name": "I'M <1>OLENA</1>",
+    "role": "Full Stack Web Developer",
+    "description": "Creative and detail-oriented full-stack web developer specializing in modern technologies like <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> and <1>Symfony</1>. I build scalable, elegant applications with clean code and great user experience.<0></0>Currently based in Spain and open to exciting remote or on-site opportunities.",
+    "cta": "MORE ABOUT ME"
+  },
   "about": {
     "sectionTitle": "ABOUT ME",
     "heroTitle": "I'm <1>Olena Holub</1>, Full-Stack Web Developer",
