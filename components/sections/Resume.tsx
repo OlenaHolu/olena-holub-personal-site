@@ -1,39 +1,64 @@
+import useTranslation from 'next-translate/useTranslation';
+import Trans from 'next-translate/Trans';
+
 export default function Resume() {
+    const { t } = useTranslation('common');
+
     return (
         <section id="resume" className="min-h-screen bg-white px-4 sm:px-12 lg:px-24 py-5">
             <div className="flex justify-center mb-12">
                 <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
-                    RESUME
+                    {t('resume.sectionTitle')}
                 </h2>
             </div>
 
             <div className="px-8 flex flex-col justify-around min-h-[calc(100vh-15rem)]">
                 <div className="border-b border-gray-300 pb-10">
-                    <h3 className="text-xl font-semibold mb-6">EDUCATION</h3>
+                    <h3 className="text-xl font-semibold mb-6">{t('resume.education.title')}</h3>
                     <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2  text-white bg-yellow-400 font-bold mb-2">Associate Degree in Web Dev</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                {t('resume.education.webdev.title')}
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong> IES Benigasló, Vall de Uxó, Castellón, Spain</strong> <br />
-                                2024 – 2025 <br />
-                                (Formación Profesional de Grado Superior) <br />
-                                Graduated with honors. Focus on full-stack development, databases, and deployment tools.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.education.webdev.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">English: Level B2</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                {t('resume.education.english.title')}
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>EOI Castellón de la Plana, Spain</strong><br />
-                                2022 – 2023 <br />
-                                Completed with strong performance. Emphasis on business, tech, and academic communication.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.education.english.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
                         <div>
-                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">Master's in Finance</h4>
+                            <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
+                                {t('resume.education.masters.title')}
+                            </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>Zaporizhzhya National Technical University, Ukraine </strong> <br />
-                                2003 – 2008 <br />
-                                Graduated with distinction. Specialized in financial systems, analysis, and business planning.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.education.masters.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
                     </div>
@@ -41,49 +66,66 @@ export default function Resume() {
 
                 {/* EXPERIENCE BLOCK */}
                 <div className="pb-10">
-                    <h3 className="text-xl font-semibold mb-6">EXPERIENCE</h3>
+                    <h3 className="text-xl font-semibold mb-6">{t('resume.experience.title')}</h3>
                     <div className="grid grid-cols-1 xl:grid-cols-3 gap-8">
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Full Stack Web Developer
+                                {t('resume.experience.fullstack.title')}
                             </h4> <br />
                             <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
-                                Personal Project
+                                {t('resume.experience.fullstack.company')}
                             </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>Remote – Mar 2024 – Present</strong><br />
-                                Created a full-stack platform for freediving analytics using Laravel (API) and React. Deployed with Vercel and Railway. Focused on data flow, user experience, and architecture.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.experience.fullstack.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Web Developer Intern
+                                {t('resume.experience.intern.title')}
                             </h4> <br />
                             <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
-                                ORBYS
+                                {t('resume.experience.intern.company')}
                             </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>Castellón, Spain – 2025</strong><br />
-                                Full-stack development using Symfony and React. Participated in agile sprints, integrated APIs, and improved existing UX/UI features across internal platforms.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.experience.intern.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
 
                         <div>
                             <h4 className="inline-block w-max text-lg px-2 text-white bg-yellow-400 font-bold mb-2">
-                                Management, Analis
+                                {t('resume.experience.banking.title')}
                             </h4> <br />
                             <h4 className="inline-block w-max text-md text-yellow-600 font-bold mb-2">
-                                Banking sector
+                                {t('resume.experience.banking.company')}
                             </h4>
                             <p className="text-sm leading-relaxed">
-                                <strong>Zaporizhzhia, Ukraine – 2006 – 2014</strong><br />
-                                Worked in the retail and corporate banking division. Conducted risk assessments, analyzed financial data, and supported loan portfolio management and customer relations.
+                                <Trans
+                                    ns="common"
+                                    i18nKey="resume.experience.banking.description"
+                                    components={{
+                                        1: <strong />,
+                                        0: <br />
+                                    }}
+                                />
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     );
 }

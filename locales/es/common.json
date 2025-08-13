@@ -30,6 +30,42 @@
       "desc": "Despliegue rápido y confiable usando Vercel y Railway. Siempre expandiendo mi conocimiento con nuevas herramientas y tecnologías."
     }
   },
+  "resume": {
+    "sectionTitle": "CURRÍCULUM",
+    "education": {
+      "title": "EDUCACIÓN",
+      "webdev": {
+        "title": "Grado Superior en Desarrollo Web",
+        "description": "<1>IES Benigasló, Vall de Uxó, Castellón, España</1><0></0>2024 – 2025<0></0>(Formación Profesional de Grado Superior)<0></0>Graduada con honores. Enfoque en desarrollo full-stack, bases de datos y herramientas de despliegue."
+      },
+      "english": {
+        "title": "Inglés: Nivel B2",
+        "description": "<1>EOI Castellón de la Plana, España</1><0></0>2022 – 2023<0></0>Completado con excelente rendimiento. Énfasis en comunicación empresarial, técnica y académica."
+      },
+      "masters": {
+        "title": "Máster en Finanzas",
+        "description": "<1>Universidad Técnica Nacional de Zaporizhzhya, Ucrania</1><0></0>2003 – 2008<0></0>Graduada con distinción. Especialización en sistemas financieros, análisis y planificación empresarial."
+      }
+    },
+    "experience": {
+      "title": "EXPERIENCIA",
+      "fullstack": {
+        "title": "Desarrolladora Full Stack",
+        "company": "Proyecto Personal",
+        "description": "<1>Remoto – Mar 2024 – Presente</1><0></0>Creé una plataforma full-stack para análisis de apnea usando Laravel (API) y React. Desplegado con Vercel y Railway. Enfoque en flujo de datos, experiencia de usuario y arquitectura."
+      },
+      "intern": {
+        "title": "Desarrolladora Web en Prácticas",
+        "company": "ORBYS",
+        "description": "<1>Castellón, España – 2025</1><0></0>Desarrollo full-stack usando Symfony y React. Participé en sprints ágiles, integré APIs y mejoré características UX/UI existentes en plataformas internas."
+      },
+      "banking": {
+        "title": "Gestión, Análisis",
+        "company": "Sector Bancario",
+        "description": "<1>Zaporizhzhia, Ucrania – 2006 – 2014</1><0></0>Trabajé en la división de banca minorista y corporativa. Realicé evaluaciones de riesgo, analicé datos financieros y apoyé la gestión de carteras de préstamos y relaciones con clientes."
+      }
+    }
+  },
   "navigation": {
     "home": "Inicio",
     "about": "Sobre Mí",

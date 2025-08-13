@@ -30,6 +30,42 @@
       "desc": "Fast and reliable deployment using Vercel and Railway. Always expanding my knowledge with new tools and tech."
     }
   },
+  "resume": {
+    "sectionTitle": "RESUME",
+    "education": {
+      "title": "EDUCATION",
+      "webdev": {
+        "title": "Associate Degree in Web Dev",
+        "description": "<1>IES Benigasló, Vall de Uxó, Castellón, Spain</1><0></0>2024 – 2025<0></0>(Formación Profesional de Grado Superior)<0></0>Graduated with honors. Focus on full-stack development, databases, and deployment tools."
+      },
+      "english": {
+        "title": "English: Level B2",
+        "description": "<1>EOI Castellón de la Plana, Spain</1><0></0>2022 – 2023<0></0>Completed with strong performance. Emphasis on business, tech, and academic communication."
+      },
+      "masters": {
+        "title": "Master's in Finance",
+        "description": "<1>Zaporizhzhya National Technical University, Ukraine</1><0></0>2003 – 2008<0></0>Graduated with distinction. Specialized in financial systems, analysis, and business planning."
+      }
+    },
+    "experience": {
+      "title": "EXPERIENCE",
+      "fullstack": {
+        "title": "Full Stack Web Developer",
+        "company": "Personal Project",
+        "description": "<1>Remote – Mar 2024 – Present</1><0></0>Created a full-stack platform for freediving analytics using Laravel (API) and React. Deployed with Vercel and Railway. Focused on data flow, user experience, and architecture."
+      },
+      "intern": {
+        "title": "Web Developer Intern",
+        "company": "ORBYS",
+        "description": "<1>Castellón, Spain – 2025</1><0></0>Full-stack development using Symfony and React. Participated in agile sprints, integrated APIs, and improved existing UX/UI features across internal platforms."
+      },
+      "banking": {
+        "title": "Management, Analis",
+        "company": "Banking sector",
+        "description": "<1>Zaporizhzhia, Ukraine – 2006 – 2014</1><0></0>Worked in the retail and corporate banking division. Conducted risk assessments, analyzed financial data, and supported loan portfolio management and customer relations."
+      }
+    }
+  },
   "navigation": {
     "home": "Home",
     "about": "About Me", 
