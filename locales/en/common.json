@@ -66,6 +66,33 @@
       }
     }
   },
+  "portfolio": {
+    "sectionTitle": "PORTFOLIO",
+    "description": "Explore my recent projects showcasing modern web development with clean code and great user experience.",
+    "featured": {
+      "title": "FreediveAnalyzer",
+      "subtitle": "Personal Project – Full Stack App (2024)",
+      "description": "FreediveAnalyzer is a full-stack web platform for logging and analyzing freediving sessions, designed with scalability and modularity in mind. Built with a React SPA frontend and a Laravel RESTful API backend, it supports multilingual interfaces (i18next), secure JWT-based authentication (email/password and Google OAuth), and real-time data visualization via Recharts. The system enables manual and bulk dive imports (.xml/.sml), tracks dive metrics, and delivers performance insights through dynamic charts and oxygen recovery ratios. Deployed with CI/CD pipelines (GitHub + Docker + Vercel), integrated with PostgreSQL, and optimized for cross-device responsiveness."
+    },
+    "others": {
+      "penyes": {
+        "title": "PenyesAPP",
+        "subtitle": "Academic Project – Full Stack Platform (2025)",
+        "description": "Web platform designed for managing local festival groups ('peñas'), enabling administrators to oversee users, peñas, payments, and fair draw systems, while users can join groups, manage their profile, and track payments. Includes role-based access, a dynamic cadafal draw implemented in React, and an integrated wallet for fee management."
+      },
+      "social": {
+        "title": "SocialAPP",
+        "subtitle": "Academic Project",
+        "description": "Social networking application built with modern web technologies and responsive design."
+      }
+    },
+    "buttons": {
+      "viewLive": "View Live",
+      "viewCode": "View Code",
+      "viewMore": "View More Projects",
+      "hideOthers": "Hide Other Projects"
+    }
+  },
   "navigation": {
     "home": "Home",
     "about": "About Me", 

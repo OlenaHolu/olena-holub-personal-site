@@ -66,6 +66,33 @@
       }
     }
   },
+  "portfolio": {
+    "sectionTitle": "PORTAFOLIO",
+    "description": "Explora mis proyectos recientes que muestran desarrollo web moderno con código limpio y gran experiencia de usuario.",
+    "featured": {
+      "title": "FreediveAnalyzer",
+      "subtitle": "Proyecto Personal – Aplicación Full Stack (2024)",
+      "description": "FreediveAnalyzer es una plataforma web full-stack para registrar y analizar sesiones de apnea, diseñada con escalabilidad y modularidad en mente. Construida con un frontend React SPA y un backend API RESTful Laravel, soporta interfaces multiidioma (i18next), autenticación segura basada en JWT (email/contraseña y Google OAuth), y visualización de datos en tiempo real vía Recharts. El sistema permite importaciones manuales y masivas de inmersiones (.xml/.sml), rastrea métricas de buceo y entrega insights de rendimiento a través de gráficos dinámicos y ratios de recuperación de oxígeno. Desplegado con pipelines CI/CD (GitHub + Docker + Vercel), integrado con PostgreSQL y optimizado para responsividad multi-dispositivo."
+    },
+    "others": {
+      "penyes": {
+        "title": "PenyesAPP",
+        "subtitle": "Proyecto Académico – Plataforma Full Stack (2025)",
+        "description": "Plataforma web diseñada para gestionar grupos festivos locales ('peñas'), permitiendo a los administradores supervisar usuarios, peñas, pagos y sistemas de sorteo justo, mientras que los usuarios pueden unirse a grupos, gestionar su perfil y rastrear pagos. Incluye acceso basado en roles, un sorteo dinámico de cadafal implementado en React y una billetera integrada para gestión de tarifas."
+      },
+      "social": {
+        "title": "SocialAPP",
+        "subtitle": "Proyecto Académico",
+        "description": "Aplicación de red social construida con tecnologías web modernas y diseño responsivo."
+      }
+    },
+    "buttons": {
+      "viewLive": "Ver Demo",
+      "viewCode": "Ver Código",
+      "viewMore": "Ver Más Proyectos",
+      "hideOthers": "Ocultar Otros Proyectos"
+    }
+  },
   "navigation": {
     "home": "Inicio",
     "about": "Sobre Mí",

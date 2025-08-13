@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { ExternalLink, ChevronDown, ChevronUp, Github } from 'lucide-react';
+import useTranslation from 'next-translate/useTranslation';
 
 interface Project {
   title: string;
@@ -13,40 +14,42 @@ interface Project {
   githubUrl: string | null;
 }
 
-const projects = {
-  featured: {
-    title: "FreediveAnalyzer",
-    subtitle: "Personal Project – Full Stack App (2024)",
-    description: "FreediveAnalyzer is a full-stack web platform for logging and analyzing freediving sessions, designed with scalability and modularity in mind. Built with a React SPA frontend and a Laravel RESTful API backend, it supports multilingual interfaces (i18next), secure JWT-based authentication (email/password and Google OAuth), and real-time data visualization via Recharts. The system enables manual and bulk dive imports (.xml/.sml), tracks dive metrics, and delivers performance insights through dynamic charts and oxygen recovery ratios. Deployed with CI/CD pipelines (GitHub + Docker + Vercel), integrated with PostgreSQL, and optimized for cross-device responsiveness.",
-    image: "/images/freediveanalyzerCROP.png",
-    technologies: ['React', 'Laravel', 'Tailwind', 'Chart.js'],
-    liveUrl: "https://frontend-freedive.vercel.app/",
-    githubUrl: "https://github.com/OlenaHolu/frontend-freedive.git"
-  },
-  others: [
-    {
-      title: "PenyesAPP",
-      subtitle: "Academic Project – Full Stack Platform (2025)",
-      description: "Web platform designed for managing local festival groups ('peñas'), enabling administrators to oversee users, peñas, payments, and fair draw systems, while users can join groups, manage their profile, and track payments. Includes role-based access, a dynamic cadafal draw implemented in React, and an integrated wallet for fee management.",
-      image: "/images/penyesAPP.png",
-      technologies: ['Laravel', 'Blade', 'Tailwind', 'MySQL', 'React', 'Vite', 'Axios'],
-      liveUrl: null,
-      githubUrl: "https://github.com/OlenaHolu/Penyes-app.git"
-    },
-    {
-      title: "SocialAPP",
-      subtitle: "Academic Project",
-      description: "Social networking application built with modern web technologies and responsive design.",
-      image: "/images/socialApp.png",
-      technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
-      liveUrl: null,
-      githubUrl: "https://github.com/OlenaHolu/socialapp.git"
-    }
-  ]
-};
-
 export default function Portfolio() {
+  const { t } = useTranslation('common');
   const [showOthers, setShowOthers] = useState(false);
+
+  // Projects data using translations
+  const projects = {
+    featured: {
+      title: t('portfolio.featured.title'),
+      subtitle: t('portfolio.featured.subtitle'),
+      description: t('portfolio.featured.description'),
+      image: "/images/freediveanalyzerCROP.png",
+      technologies: ['React', 'Laravel', 'Tailwind', 'Chart.js'],
+      liveUrl: "https://frontend-freedive.vercel.app/",
+      githubUrl: "https://github.com/OlenaHolu/frontend-freedive.git"
+    },
+    others: [
+      {
+        title: t('portfolio.others.penyes.title'),
+        subtitle: t('portfolio.others.penyes.subtitle'),
+        description: t('portfolio.others.penyes.description'),
+        image: "/images/penyesAPP.png",
+        technologies: ['Laravel', 'Blade', 'Tailwind', 'MySQL', 'React', 'Vite', 'Axios'],
+        liveUrl: null,
+        githubUrl: "https://github.com/OlenaHolu/Penyes-app.git"
+      },
+      {
+        title: t('portfolio.others.social.title'),
+        subtitle: t('portfolio.others.social.subtitle'),
+        description: t('portfolio.others.social.description'),
+        image: "/images/socialApp.png",
+        technologies: ['Next.js', 'MongoDB', 'Tailwind', 'Chart.js'],
+        liveUrl: null,
+        githubUrl: "https://github.com/OlenaHolu/socialapp.git"
+      }
+    ]
+  };
 
   const ProjectCard = ({ project, featured = false }: { project: Project; featured?: boolean }) => (
     <div className={`bg-white shadow-lg rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${featured ? 'p-4 sm:p-6' : 'p-4'
@@ -70,7 +73,7 @@ export default function Portfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-yellow-400 hover:bg-yellow-500 text-black p-2 rounded-full transition-colors"
-                  title="View Live"
+                  title={t('portfolio.buttons.viewLive')}
                 >
                   <ExternalLink size={20} />
                 </a>
@@ -81,7 +84,7 @@ export default function Portfolio() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white hover:bg-gray-300 text-black p-2 rounded-full transition-colors"
-                  title="View Code"
+                  title={t('portfolio.buttons.viewCode')}
                 >
                   <Github size={20} />
                 </a>
@@ -134,7 +137,7 @@ export default function Portfolio() {
                     }`}
                 >
                   <ExternalLink size={16} />
-                  <span className="text-sm">View Live</span>
+                  <span className="text-sm">{t('portfolio.buttons.viewLive')}</span>
                 </a>
               )}
               {project.githubUrl && (
@@ -145,7 +148,7 @@ export default function Portfolio() {
                   className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
                 >
                   <Github size={16} />
-                  <span className="text-sm">View Code</span>
+                  <span className="text-sm">{t('portfolio.buttons.viewCode')}</span>
                 </a>
               )}
             </div>
@@ -160,14 +163,14 @@ export default function Portfolio() {
 
       <div className="flex justify-center mb-12">
         <h2 className="text-4xl font-bold text-center w-full px-6 py-6 border-2 border-gray-400 inline-block">
-          PORTFOLIO
+          {t('portfolio.sectionTitle')}
         </h2>
       </div>
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
           <p className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-            Explore my recent projects showcasing modern web development with clean code and great user experience.
+            {t('portfolio.description')}
           </p>
         </div>
 
@@ -182,7 +185,7 @@ export default function Portfolio() {
             onClick={() => setShowOthers(!showOthers)}
             className="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-700 font-semibold transition-colors duration-200 group"
           >
-            <span>{showOthers ? 'Hide Other Projects' : 'View More Projects'}</span>
+            <span>{showOthers ? t('portfolio.buttons.hideOthers') : t('portfolio.buttons.viewMore')}</span>
             {showOthers ? (
               <ChevronUp size={20} className="transition-transform group-hover:-translate-y-0.5" />
             ) : (
