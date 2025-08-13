@@ -29,5 +29,17 @@
       "title": "Deployment & Continuous Learning",
       "desc": "Fast and reliable deployment using Vercel and Railway. Always expanding my knowledge with new tools and tech."
     }
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Me", 
+    "resume": "Resume",
+    "portfolio": "Portfolio",
+    "recommendation": "Recommendation",
+    "contact": "Contact"
+  },
+  "common": {
+    "name": "Olena Holub",
+    "fullName": "OLENA HOLUB"
   }
 }

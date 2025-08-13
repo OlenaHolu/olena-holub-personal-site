@@ -16,7 +16,7 @@ const locales = [
 
 export default function LanguageSwitcher({
   mode = 'full',
-  dropdownUp = false, // útil para la barra inferior móvil: abrir hacia arriba
+  dropdownUp = false,
 }: {
   mode?: Mode;
   dropdownUp?: boolean;
@@ -26,7 +26,6 @@ export default function LanguageSwitcher({
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  // cerrar al clicar fuera
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
       if (!ref.current) return;

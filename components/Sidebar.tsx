@@ -2,20 +2,23 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 import LanguageSwitcher from './LanguageSwitcher';
 
-const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About Me', href: '#about' },
-  { label: 'Resume', href: '#resume' },
-  { label: 'Portfolio', href: '#portfolio' },
-  { label: 'Recommendation', href: '#recommendation' },
-  { label: 'Contact', href: '#contact' },
-];
-
 export default function Sidebar() {
+  const { t } = useTranslation('common');
   const [activeSection, setActiveSection] = useState<string>('#home');
   const [showMobileNav, setShowMobileNav] = useState(false);
+
+  // Navigation items using translations
+  const navItems = [
+    { label: t('navigation.home'), href: '#home' },
+    { label: t('navigation.about'), href: '#about' },
+    { label: t('navigation.resume'), href: '#resume' },
+    { label: t('navigation.portfolio'), href: '#portfolio' },
+    { label: t('navigation.recommendation'), href: '#recommendation' },
+    { label: t('navigation.contact'), href: '#contact' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +45,7 @@ export default function Sidebar() {
     window.addEventListener('scroll', handleScroll);
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [navItems]); // Added navItems as dependency
 
   return (
     <>
@@ -54,26 +57,31 @@ export default function Sidebar() {
           <div className="flex items-center gap-3">
             <Image
               src="/images/olenaCROP.JPG"
-              alt="Olena Holub"
+              alt={t('common.name')}
               width={40}
               height={40}
               className="rounded-full"
             />
-            <span className="font-bold text-sm">OLENA HOLUB</span>
+            <span className="font-bold text-sm">{t('common.fullName')}</span>
           </div>
           
-          {/* Mobile nav dots */}
-          <div className="flex gap-2">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className={`w-2 h-2 rounded-full transition-colors ${
-                  activeSection === item.href ? 'bg-white' : 'bg-black/30'
-                }`}
-                title={item.label}
-              />
-            ))}
+          {/* Language switcher for mobile */}
+          <div className="flex items-center gap-3">
+            <LanguageSwitcher />
+            
+            {/* Mobile nav dots */}
+            <div className="flex gap-2">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    activeSection === item.href ? 'bg-white' : 'bg-black/30'
+                  }`}
+                  title={item.label}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </nav>
@@ -84,7 +92,7 @@ export default function Sidebar() {
         <div className="p-6">
           <Image
             src="/images/olenaCROP.JPG"
-            alt="Olena Holub"
+            alt={t('common.name')}
             width={120}
             height={120}
             className="rounded-full shadow-lg"
@@ -115,6 +123,10 @@ export default function Sidebar() {
           <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
         </div>
 
+        {/* Language switcher for desktop */}
+        <div className="p-4">
+          <LanguageSwitcher />
+        </div>
       </aside>
     </>
   );

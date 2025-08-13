@@ -29,5 +29,17 @@
       "title": "Despliegue y Aprendizaje Continuo",
       "desc": "Despliegue rápido y confiable usando Vercel y Railway. Siempre expandiendo mi conocimiento con nuevas herramientas y tecnologías."
     }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "resume": "Currículum", 
+    "portfolio": "Portafolio",
+    "recommendation": "Recomendaciones",
+    "contact": "Contacto"
+  },
+  "common": {
+    "name": "Olena Holub",
+    "fullName": "OLENA HOLUB"
   }
 }
