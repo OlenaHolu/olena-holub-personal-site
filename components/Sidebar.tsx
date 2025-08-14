@@ -59,7 +59,7 @@ export default function Sidebar() {
               alt={t('common.name')}
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full h-auto w-auto"
             />
             <span className="font-bold text-sm">{t('common.fullName')}</span>
           </div>
@@ -94,7 +94,7 @@ export default function Sidebar() {
             alt={t('common.name')}
             width={120}
             height={120}
-            className="rounded-full shadow-lg"
+            className="rounded-full shadow-lg h-auto w-auto"
           />
         </div>
 
