@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import Swal from 'sweetalert2';
+import useTranslation from 'next-translate/useTranslation';
 
 export default function ContactForm() {
+  const { t } = useTranslation('common');
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
 
@@ -22,8 +24,8 @@ export default function ContactForm() {
     if (!form.name || !form.email || !form.message) {
       Swal.fire({
         icon: 'error',
-        title: 'Missing Fields',
-        text: 'All fields are required.',
+        title: t('contact.errors.missingTitle'),
+        text: t('contact.errors.missingText'),
       });
       return;
     }
@@ -31,14 +33,14 @@ export default function ContactForm() {
     if (!validateEmail(form.email)) {
       Swal.fire({
         icon: 'error',
-        title: 'Invalid Email',
-        text: 'Please enter a valid email address.',
+        title: t('contact.errors.invalidEmailTitle'),
+        text: t('contact.errors.invalidEmailText'),
       });
       return;
     }
 
     try {
-      setStatus('Sending...');
+      setStatus(t('contact.status.sending'));
 
       const res = await fetch('/api/contact', {
         method: 'POST',
@@ -49,24 +51,24 @@ export default function ContactForm() {
       if (res.ok) {
         Swal.fire({
           icon: 'success',
-          title: 'Message Sent',
-          text: 'Thanks! I will get back to you shortly.',
+          title: t('contact.success.title'),
+          text: t('contact.success.text'),
         });
         setForm({ name: '', email: '', message: '' });
         setStatus('');
       } else {
         Swal.fire({
           icon: 'error',
-          title: 'Error',
-          text: 'Something went wrong. Please try again later.',
+          title: t('contact.errors.generalTitle'),
+          text: t('contact.errors.generalText'),
         });
         setStatus('');
       }
     } catch (error) {
       Swal.fire({
         icon: 'error',
-        title: 'Unexpected Error',
-        text: 'Please try again later.',
+        title: t('contact.errors.unexpectedTitle'),
+        text: t('contact.errors.unexpectedText'),
       });
       setStatus('');
     }
@@ -78,7 +80,7 @@ export default function ContactForm() {
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder={t('contact.form.name')}
           value={form.name}
           onChange={handleChange}
           required
@@ -87,7 +89,7 @@ export default function ContactForm() {
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder={t('contact.form.email')}
           value={form.email}
           onChange={handleChange}
           required
@@ -97,7 +99,7 @@ export default function ContactForm() {
 
       <textarea
         name="message"
-        placeholder="Your Message"
+        placeholder={t('contact.form.message')}
         rows={3}
         value={form.message}
         onChange={handleChange}
@@ -110,7 +112,7 @@ export default function ContactForm() {
           type="submit"
           className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-6 py-3 rounded-lg transition duration-200"
         >
-          Send Message
+          {t('contact.form.send')}
         </button>
       </div>
 

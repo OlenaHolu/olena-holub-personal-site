@@ -106,6 +106,42 @@
     "readFullLetter": "Leer carta completa",
     "imageAlt": "Carta de recomendación"
   },
+  "contact": {
+    "sectionTitle": "CONTACTO",
+    "heroTitle": "¡No dude en <1>contactarme</1>!",
+    "heroDescription": "Me encantaría conocer su proyecto y cómo puedo ayudar. Por favor, complete el formulario o póngase en contacto utilizando mi información de contacto.",
+    "email": {
+      "address": "olenaholub.dev@gmail.com",
+      "label": "Envíeme un correo en cualquier momento"
+    },
+    "phone": {
+      "number": "+34 643 448 065",
+      "label": "Llame o envíe un mensaje"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar mensaje"
+    },
+    "status": {
+      "sending": "Enviando..."
+    },
+    "success": {
+      "title": "Mensaje enviado",
+      "text": "Gracias. Me pondré en contacto en breve."
+    },
+    "errors": {
+      "missingTitle": "Campos obligatorios",
+      "missingText": "Todos los campos son obligatorios.",
+      "invalidEmailTitle": "Correo electrónico no válido",
+      "invalidEmailText": "Por favor, introduzca una dirección de correo electrónico válida.",
+      "generalTitle": "Error",
+      "generalText": "Algo salió mal. Inténtelo de nuevo más tarde.",
+      "unexpectedTitle": "Error inesperado",
+      "unexpectedText": "Inténtelo de nuevo más tarde."
+    }
+  },
   "navigation": {
     "home": "Inicio",
     "about": "Sobre Mí",

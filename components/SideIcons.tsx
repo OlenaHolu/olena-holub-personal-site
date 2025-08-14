@@ -9,17 +9,20 @@ import {
   Send
 } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
-
-const navItems = [
-  { icon: Home, label: 'Home', href: '#home' },
-  { icon: User, label: 'About', href: '#about' },
-  { icon: Briefcase, label: 'Resume', href: '#resume' },
-  { icon: LayoutGrid, label: 'Portfolio', href: '#portfolio' },
-  { icon: MessageCircle, label: 'Recommendation', href: '#recommendation' },
-  { icon: Send, label: 'Contact', href: '#contact' }
-];
+import useTranslation from 'next-translate/useTranslation';
 
 export default function SideIcons() {
+  const { t } = useTranslation('common');
+
+  const navItems = [
+    { icon: Home, label: t('navigation.home'), href: '#home' },
+    { icon: User, label: t('navigation.about'), href: '#about' },
+    { icon: Briefcase, label: t('navigation.resume'), href: '#resume' },
+    { icon: LayoutGrid, label: t('navigation.portfolio'), href: '#portfolio' },
+    { icon: MessageCircle, label: t('navigation.recommendation'), href: '#recommendation' },
+    { icon: Send, label: t('navigation.contact'), href: '#contact' }
+  ];
+
   return (
     <>
       {/* Mobile: Bottom fixed navigation with Language dropdown */}
