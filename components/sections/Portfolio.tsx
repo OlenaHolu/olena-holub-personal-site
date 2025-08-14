@@ -18,7 +18,6 @@ export default function Portfolio() {
   const { t } = useTranslation('common');
   const [showOthers, setShowOthers] = useState(false);
 
-  // Projects data using translations
   const projects = {
     featured: {
       title: t('portfolio.featured.title'),

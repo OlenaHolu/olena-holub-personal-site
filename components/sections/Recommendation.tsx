@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { FileText } from 'lucide-react';
 import useTranslation from 'next-translate/useTranslation';
-import Trans from 'next-translate/Trans';
 
 export default function Recommendation() {
   const { t } = useTranslation('common');
@@ -19,7 +18,6 @@ export default function Recommendation() {
       </div>
       
       <div className="max-w-4xl mx-auto">
-        {/* Texto de recomendación */}
         <div className="bg-gray-50 border-l-4 border-yellow-400 pl-6 pr-6 py-8 rounded-xl shadow-md relative">
           <p className="text-sm text-gray-500 italic mb-3">
             {t('recommendation.date')}
@@ -43,7 +41,6 @@ export default function Recommendation() {
             {t('recommendation.author.title')}
           </p>
           
-          {/* Botón para abrir modal */}
           <button
             onClick={() => setIsOpen(true)}
             className="mt-6 inline-flex items-center gap-2 text-sm text-yellow-600 underline hover:text-yellow-800 transition"
@@ -54,7 +51,7 @@ export default function Recommendation() {
         </div>
       </div>
 
-      {/* Modal con imagen */}
+      {/* Full Letter Modal */}
       {isOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center"

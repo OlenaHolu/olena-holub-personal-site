@@ -38,7 +38,7 @@ export default function SideIcons() {
               </a>
             );
           })}
-          {/* Language dropdown (abre hacia arriba) */}
+          {/* Language dropdown */}
           <LanguageSwitcher mode="icon" dropdownUp />
         </div>
       </div>

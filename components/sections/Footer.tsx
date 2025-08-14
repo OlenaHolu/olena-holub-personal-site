@@ -1,4 +1,3 @@
-// components/Footer.tsx
 'use client';
 
 import { Github, Linkedin, Mail } from 'lucide-react';
@@ -7,7 +6,7 @@ export default function Footer() {
     return (
         <footer className="bg-gray-100 text-gray-600 text-sm mt-16 border-t border-gray-200">
             <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col items-center space-y-4 sm:space-y-2">
-                {/* Social Icons */}
+            
                 <div className="flex space-x-6">
                     <a
                         href="https://github.com/OlenaHolu"

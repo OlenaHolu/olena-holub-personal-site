@@ -10,7 +10,6 @@ export default function Sidebar() {
   const [activeSection, setActiveSection] = useState<string>('#home');
   const [showMobileNav, setShowMobileNav] = useState(false);
 
-  // Navigation items using translations
   const navItems = [
     { label: t('navigation.home'), href: '#home' },
     { label: t('navigation.about'), href: '#about' },
