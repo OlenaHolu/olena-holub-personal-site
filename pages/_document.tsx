@@ -12,7 +12,9 @@ class MyDocument extends Document {
 
     return (
       <Html lang={lang}>
-        <Head />
+        <Head>
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        </Head>
         <body className="antialiased bg-white text-gray-800">
           <Main />
           <NextScript />
