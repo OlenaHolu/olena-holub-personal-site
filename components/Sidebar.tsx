@@ -122,10 +122,6 @@ export default function Sidebar() {
           <div className="w-3 h-3 bg-black rounded-full mt-0.5" />
         </div>
 
-        {/* Language switcher for desktop */}
-        <div className="p-4">
-          <LanguageSwitcher />
-        </div>
       </aside>
     </>
   );
