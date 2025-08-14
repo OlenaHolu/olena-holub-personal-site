@@ -93,6 +93,19 @@
       "hideOthers": "Ocultar Otros Proyectos"
     }
   },
+  "recommendation": {
+    "sectionTitle": "RECOMENDACIONES",
+    "date": "La Vall d'Uixó, 18 de julio de 2025",
+    "paragraph1": "\"Durante su formación en nuestro centro, Olena ha demostrado ser una estudiante ejemplar, con una actitud proactiva, gran capacidad de aprendizaje y un fuerte compromiso con su desarrollo profesional.",
+    "paragraph2": "Destaca por su curiosidad, su capacidad para resolver problemas de forma autónoma y su interés genuino por la programación y el desarrollo de software. No solo ha obtenido resultados académicos excelentes —incluyendo una matrícula de honor— sino que también ha mostrado habilidades excepcionales para trabajar en equipo y asumir responsabilidades.",
+    "paragraph3": "Estoy segura de que Olena aportará un gran valor en cualquier proyecto o equipo en el queparticipe.\"",
+    "author": {
+      "name": "María Carmen Gómez Cano",
+      "title": "Tutora del Programa DAW – IES Benigasló (Castellón)"
+    },
+    "readFullLetter": "Leer carta completa",
+    "imageAlt": "Carta de recomendación"
+  },
   "navigation": {
     "home": "Inicio",
     "about": "Sobre Mí",

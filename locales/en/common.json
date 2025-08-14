@@ -93,6 +93,19 @@
       "hideOthers": "Hide Other Projects"
     }
   },
+  "recommendation": {
+    "sectionTitle": "RECOMMENDATIONS",
+    "date": "La Vall d'Uixó, July 18th, 2025",
+    "paragraph1": "\"During her training at our center, Olena has proven to be an exemplary student, with a proactive attitude, great learning ability, and a strong commitment to her professional development.",
+    "paragraph2": "She stands out for her curiosity, her ability to solve problems independently, and her genuine interest in programming and software development. Not only has she achieved excellent academic results —including graduating with honors— but she has also demonstrated exceptional skills in teamwork and taking on responsibilities.",
+    "paragraph3": "I am confident that Olena will bring great value to any project or team she joins.\"",
+    "author": {
+      "name": "María Carmen Gómez Cano",
+      "title": "DAW Program Tutor – IES Benigasló (Castellón)"
+    },
+    "readFullLetter": "Read full letter",
+    "imageAlt": "Recommendation letter"
+  },
   "navigation": {
     "home": "Home",
     "about": "About Me", 
