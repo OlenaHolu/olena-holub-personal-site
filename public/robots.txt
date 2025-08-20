@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://olena-holub-personal-site.vercel.app/
+
+# Sitemaps
+Sitemap: https://olena-holub-personal-site.vercel.app/sitemap.xml
