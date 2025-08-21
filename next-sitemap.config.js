@@ -1,9 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://olena-holub-personal-site.vercel.app/',
+    siteUrl: 'https://olena-holub-personal-site.vercel.app',
     generateRobotsTxt: true,
-    changefreq: 'weekly',
-    priority: 0.7,
-    exclude: ['/404', '/500'],
+    generateIndexSitemap: false,
+    sitemapSize: 50000,
   };
   

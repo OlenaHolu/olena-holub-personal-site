@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import Trans from 'next-translate/Trans';
-
+import { NextSeo, SocialProfileJsonLd } from 'next-seo';
 import SideIcons from '../components/SideIcons';
 import About from '../components/sections/About';
 import Resume from '../components/sections/Resume';
@@ -11,23 +11,40 @@ import Contact from '../components/sections/Contact';
 import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/sections/Footer';
 
+const BASE_URL = 'https://olena-holub-personal-site.vercel.app';
+
 export default function HomePage() {
   const { t } = useTranslation('common');
 
   return (
     <div className="relative scroll-smooth">
-      
-      {/* Íconos laterales en desktop */}
+      {/* SEO */}
+      <NextSeo
+        title="Full-Stack Web Developer"
+        description="I'm Olena Holub, Full-Stack Web Developer. JavaScript, Next.js, PHP, Laravel y Symfony."
+        canonical={BASE_URL} 
+        openGraph={{ url: BASE_URL }}
+      />
+
+      <SocialProfileJsonLd
+        type="Person"
+        name="Olena Holub"
+        url={BASE_URL}
+        sameAs={[
+          'https://github.com/OlenaHolu',
+          'https://www.linkedin.com/in/holub-olena/',
+        ]}
+      />
+
       <div className="hidden lg:block">
         <SideIcons />
       </div>
       
-      {/* Sección principal */}
       <section
         id="home"
         className="relative flex flex-col lg:flex-row min-h-screen bg-white"
       >
-        {/* Texto lado izquierdo */}
+        {/* Left text */}
         <div className="w-full lg:w-1/2 px-4 sm:px-6 md:px-8 lg:px-24 py-8 sm:py-12 lg:py-20 flex flex-col justify-center z-10 order-2 lg:order-1">
           
           <h1 className="text-2xl sm:text-3xl lg:text-3xl font-extrabold mb-2 sm:mb-3 text-gray-800">
@@ -75,7 +92,7 @@ export default function HomePage() {
           </a>
         </div>
 
-        {/* Imagen lado derecho */}
+        {/* Right image */}
         <div className="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-screen order-1 lg:order-2 sepia-0 hover:sepia transition duration-300 ease-in-out">
           <Image
             src="/images/olenaCROP.JPG"
@@ -88,7 +105,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Contenido inferior */}
+      {/* Secciones */}
       <div className="flex flex-col lg:flex-row">
         <div className="lg:sticky lg:top-0 lg:h-screen w-full lg:w-auto">
           <Sidebar />
@@ -103,7 +120,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Íconos móviles */}
       <div className="block lg:hidden">
         <SideIcons />
       </div>
