@@ -2,14 +2,14 @@
   "home": {
     "greeting": "HI THERE!",
     "name": "I'M <1>OLENA</1>",
-    "role": "Full Stack Web Developer",
-    "description": "Creative and detail-oriented full-stack web developer specializing in modern technologies like <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> and <1>Symfony</1>. I build scalable, elegant applications with clean code and great user experience.<0></0>Currently based in Spain and open to exciting remote or on-site opportunities.",
+    "role": "Junior SAP ABAP Developer · Full Stack Web Developer",
+    "description": "I’m a passionate developer who loves creating clean, meaningful and well-structured solutions—whether in modern web technologies (JavaScript, Next.js, PHP, Laravel, Symfony) or in the growing world of SAP ABAP.<0></0>What drives me is understanding how things work, improving them, and turning complexity into something elegant and functional.<0></0>Based in Spain and excited to grow, learn and contribute as a Junior SAP ABAP Developer or Full Stack Developer, both remote and on-site.",
     "cta": "MORE ABOUT ME"
   },
   "about": {
     "sectionTitle": "ABOUT ME",
-    "heroTitle": "I'm <1>Olena Holub</1>, Full-Stack Web Developer",
-    "heroDescription": "Specializing in modern technologies like <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> and <1>Symfony</1>. I build scalable, elegant applications with clean code and great user experience.Currently based in Spain and open to exciting remote or on-site opportunities.<0></0><0></0>My deployment experience includes platforms like <1>Vercel</1>, <1>Railway</1>, and <1>AWS</1>. I also have solid experience with object-oriented languages like <1>Java</1> and <1>Python</1>, and I'm always committed to continuous learning and improving my development skills.",
+    "heroTitle": "I'm <1>Olena Holub</1>, Junior SAP ABAP Developer & Full-Stack Web Developer",
+    "heroDescription": "I’m a passionate developer with a solid foundation in <1>full-stack web development</1> (JavaScript, TypeScript, Next.js, React, PHP, Laravel, Symfony) and a growing specialization in <1>SAP ABAP</1> and enterprise-grade software development.<0></0><0></0>I love building clean, scalable, and well-structured applications — whether in modern web environments or in the SAP ecosystem. My background in OOP, data structures, business logic, and clean architecture translates naturally into ABAP development: modularization, validations, data modeling, performance-oriented code and long-term maintainability.<0></0><0></0>Currently based in Spain and open to both <1>remote and on-site opportunities</1>.<0></0><0></0>I have hands-on experience deploying apps with <1>Vercel, Railway, and AWS</1>, and solid knowledge of <1>Java and Python</1>. I’m deeply committed to continuous learning and evolving into a strong SAP ABAP professional while keeping my full-stack versatility.",
     "stats": {
       "years": "YEARS OF TRAINING",
       "projects": "PROJECTS COMPLETED",
