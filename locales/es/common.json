@@ -2,14 +2,14 @@
   "home": {
     "greeting": "¡HOLA!",
     "name": "SOY <1>OLENA</1>",
-    "role": "Desarrolladora Web Full Stack",
-    "description": "Desarrolladora web full-stack creativa y orientada al detalle, especializada en tecnologías modernas como <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> y <1>Symfony</1>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario.<0></0>Actualmente ubicada en España y abierta a oportunidades emocionantes remotas o presenciales.",
+    "role": "Junior SAP ABAP Developer · Full Stack Web Developer",
+    "description": "Soy un desarrollador apasionado al que le encanta crear soluciones limpias, significativas y bien estructuradas, ya sea con tecnologías web modernas (JavaScript, Next.js, PHP, Laravel, Symfony) o en el creciente mundo de SAP ABAP.<0></0>Lo que me impulsa es entender cómo funcionan las cosas, mejorarlas y convertir la complejidad en algo elegante y funcional.<0></0>Con base en España y con ganas de crecer, aprender y aportar como Junior SAP ABAP Developer o Full Stack Developer, tanto en remoto como presencial.",
     "cta": "MÁS SOBRE MÍ"
   },
   "about": {
     "sectionTitle": "SOBRE MÍ",
-    "heroTitle": "Soy <1>Olena Holub</1>, Desarrolladora Web Full-Stack",
-    "heroDescription": "Especializada en tecnologías modernas como <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> y <1>Symfony</1>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario. Actualmente ubicada en España y abierta a oportunidades emocionantes remotas o presenciales.<0></0><0></0>Mi experiencia en despliegue incluye plataformas como <1>Vercel</1>, <1>Railway</1> y <1>AWS</1>. También tengo sólida experiencia con lenguajes orientados a objetos como <1>Java</1> y <1>Python</1>, y siempre estoy comprometida con el aprendizaje continuo y la mejora de mis habilidades de desarrollo.",
+    "heroTitle": "Soy <1>Olena Holub</1>, Junior SAP ABAP Developer & Full-Stack Web Developer",
+    "heroDescription": "Soy una desarrolladora apasionada con una base sólida en <1>desarrollo web full-stack</1> (JavaScript, TypeScript, Next.js, React, PHP, Laravel, Symfony) y una especialización en crecimiento en <1>SAP ABAP</1> y desarrollo de software a nivel empresarial.<0></0><0></0>Me encanta crear aplicaciones limpias, escalables y bien estructuradas, ya sea en entornos web modernos o en el ecosistema SAP. Mi experiencia en OOP, estructuras de datos, lógica de negocio y arquitectura limpia se traduce de forma natural al desarrollo ABAP: modularización, validaciones, modelado de datos, código orientado al rendimiento y mantenibilidad a largo plazo.<0></0><0></0>Actualmente con base en España y abierta a oportunidades <1>remotas y presenciales</1>.<0></0><0></0>Tengo experiencia práctica desplegando aplicaciones con <1>Vercel, Railway y AWS</1>, y un sólido conocimiento de <1>Java y Python</1>. Estoy profundamente comprometida con el aprendizaje continuo y con evolucionar hacia una sólida profesional de SAP ABAP sin perder mi versatilidad full-stack.",
     "stats": {
       "years": "AÑOS DE FORMACIÓN",
       "projects": "PROYECTOS COMPLETADOS",
@@ -52,7 +52,7 @@
       "fullstack": {
         "title": "Desarrolladora Full Stack",
         "company": "Proyecto Personal",
-        "description": "<1>Remoto – Mar 2024 – Presente</1><0></0>Creé una plataforma full-stack para análisis de apnea usando Laravel (API) y React. Desplegado con Vercel y Railway. Enfoque en flujo de datos, experiencia de usuario y arquitectura."
+        "description": "<1>Remoto – Mar 2024 – Presente</1><0></0>Desarrollo completo de una plataforma web real, incluyendo diseño arquitectónico limpio, modelado de datos y lógica de negocio compleja. Experiencia en integraciones con APIs y optimización del rendimiento. Además, estoy desarrollando habilidades orientadas a ABAP, como modularización, validaciones, gestión estructurada de datos y mantenimiento evolutivo."
       },
       "intern": {
         "title": "Desarrolladora Web en Prácticas",

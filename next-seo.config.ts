@@ -1,8 +1,8 @@
 const config = {
     titleTemplate: '%s | Olena Holub',
-    defaultTitle: 'Olena Holub – Full Stack Web Developer',
+    defaultTitle: 'Olena Holub – SAP ABAP Developer & Full Stack Web Developer',
     description:
-      'Full Stack Web Developer especializada en JavaScript, Next.js, PHP, Laravel y Symfony. Apasionada por crear aplicaciones modernas, escalables y con gran experiencia de usuario. Actualmente basada en España, disponible para oportunidades remotas o presenciales.',
+      'SAP ABAP Developer y Full Stack Web Developer con experiencia en JavaScript, TypeScript, Next.js, React, PHP, Laravel y Symfony. Especializada en crear soluciones limpias, escalables y bien estructuradas tanto en entornos web como en el ecosistema SAP. Basada en España y disponible para oportunidades remotas o presenciales.',
     openGraph: {
       type: 'website',
       url: 'https://olena-holub-personal-site.vercel.app/', 
@@ -12,7 +12,7 @@ const config = {
           url: 'https://olenaholub.dev/og.jpg',
           width: 1200,
           height: 630,
-          alt: 'Olena Holub – Full Stack Web Developer'
+          alt: 'Olena Holub – SAP ABAP Developer & Full Stack Web Developer'
         }
       ]
     }

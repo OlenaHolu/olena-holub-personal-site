@@ -50,9 +50,9 @@
     "experience": {
       "title": "EXPERIENCE",
       "fullstack": {
-        "title": "Full Stack Web Developer",
+        "title": "Full Stack Developer",
         "company": "Personal Project",
-        "description": "<1>Remote – Mar 2024 – Present</1><0></0>Created a full-stack platform for freediving analytics using Laravel (API) and React. Deployed with Vercel and Railway. Focused on data flow, user experience, and architecture."
+        "description": "<1>Remote – Mar 2024 – Present</1><0></0>Full development of a real web platform, including clean architectural design, data modeling, and complex business logic. Experience with API integrations and performance optimization. Growing ABAP-oriented skills such as modularization, validations, structured data handling, and evolutionary maintenance."
       },
       "intern": {
         "title": "Web Developer Intern",
