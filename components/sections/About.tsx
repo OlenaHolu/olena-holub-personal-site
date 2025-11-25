@@ -49,7 +49,7 @@ export default function About() {
               <div className="hidden sm:block absolute top-1/2 right-0 w-[calc(50%-16px)] border-t border-dashed border-gray-500 z-0" />
 
               <div className="flex flex-col items-center justify-center p-4 sm:p-6 z-10 bg-black rounded">
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold">2</div>
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold">7</div>
                 <div className="text-xs sm:text-sm mt-1">{t('about.stats.years')}</div>
               </div>
 
