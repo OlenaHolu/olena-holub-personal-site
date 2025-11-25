@@ -3,13 +3,13 @@
     "greeting": "¡HOLA!",
     "name": "SOY <1>OLENA</1>",
     "role": "Junior SAP ABAP Developer · Full Stack Web Developer",
-    "description": "Soy un desarrollador apasionado al que le encanta crear soluciones limpias, significativas y bien estructuradas, ya sea con tecnologías web modernas (JavaScript, Next.js, PHP, Laravel, Symfony) o en el creciente mundo de SAP ABAP.<0></0>Lo que me impulsa es entender cómo funcionan las cosas, mejorarlas y convertir la complejidad en algo elegante y funcional.<0></0>Con base en España y con ganas de crecer, aprender y aportar como Junior SAP ABAP Developer o Full Stack Developer, tanto en remoto como presencial.",
+    "description": "Apasionada por crear soluciones limpias, significativas y bien estructuradas, ya sea utilizando tecnologías web modernas (<1>JavaScript, Next.js, PHP, Laravel, Symfony</1>) o trabajando en el creciente mundo de <1>SAP ABAP</1>.<0></0>Me impulsa comprender cómo funcionan las cosas, mejorarlas y transformar la complejidad en algo elegante y funcional.",
     "cta": "MÁS SOBRE MÍ"
   },
   "about": {
     "sectionTitle": "SOBRE MÍ",
     "heroTitle": "Soy <1>Olena Holub</1>, Junior SAP ABAP Developer & Full-Stack Web Developer",
-    "heroDescription": "Soy una desarrolladora apasionada con una base sólida en <1>desarrollo web full-stack</1> (JavaScript, TypeScript, Next.js, React, PHP, Laravel, Symfony) y una especialización en crecimiento en <1>SAP ABAP</1> y desarrollo de software a nivel empresarial.<0></0><0></0>Me encanta crear aplicaciones limpias, escalables y bien estructuradas, ya sea en entornos web modernos o en el ecosistema SAP. Mi experiencia en OOP, estructuras de datos, lógica de negocio y arquitectura limpia se traduce de forma natural al desarrollo ABAP: modularización, validaciones, modelado de datos, código orientado al rendimiento y mantenibilidad a largo plazo.<0></0><0></0>Actualmente con base en España y abierta a oportunidades <1>remotas y presenciales</1>.<0></0><0></0>Tengo experiencia práctica desplegando aplicaciones con <1>Vercel, Railway y AWS</1>, y un sólido conocimiento de <1>Java y Python</1>. Estoy profundamente comprometida con el aprendizaje continuo y con evolucionar hacia una sólida profesional de SAP ABAP sin perder mi versatilidad full-stack.",
+    "heroDescription": "con una base sólida en <1>desarrollo web full-stack</1> (JavaScript, TypeScript, Next.js, React, PHP, Laravel, Symfony) y una especialización en crecimiento en <1>SAP ABAP</1> y en desarrollo de software a nivel empresarial.<0></0><0></0>Me encanta crear aplicaciones limpias, escalables y bien estructuradas, tanto en entornos web modernos como dentro del ecosistema SAP. Mi experiencia en OOP, estructuras de datos, lógica de negocio y arquitectura limpia se traduce de forma natural al desarrollo en ABAP: modularización, validaciones, modelado de datos, código orientado al rendimiento y mantenibilidad a largo plazo.<0></0><0></0>Actualmente resido en España y estoy abierta a oportunidades tanto remotas como presenciales.<0></0><0></0>Tengo experiencia práctica desplegando aplicaciones con <1>Vercel, Railway y AWS</1>, además de un sólido conocimiento de <1>Java y Python</1>. Estoy profundamente comprometida con el aprendizaje continuo y con evolucionar hacia una profesional sólida en <1>SAP ABAP</1>, sin perder mi versatilidad como <1>desarrolladora full-stack</1>.",
     "stats": {
       "years": "AÑOS DE FORMACIÓN",
       "projects": "PROYECTOS COMPLETADOS",
@@ -23,7 +23,7 @@
     },
     "service2": {
       "title": "Diseño e Integración de APIs",
-      "desc": "Creando y consumiendo APIs RESTful, asegurando un flujo de datos seguro y escalable entre frontend y backend."
+      "desc": "Creación y uso de RESTful API para garantizar una integración segura, escalable y confiable entre sistemas."
     },
     "service3": {
       "title": "Despliegue y Aprendizaje Continuo",
