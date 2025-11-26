@@ -10,6 +10,7 @@ import Recommendation from '../components/sections/Recommendation';
 import Contact from '../components/sections/Contact';
 import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/sections/Footer';
+import DownloadCvButton from '@/components/DownloadCvButton';
 
 const BASE_URL = 'https://olena-holub-personal-site.vercel.app';
 
@@ -22,7 +23,7 @@ export default function HomePage() {
       <NextSeo
         title="Full-Stack Web Developer"
         description="I'm Olena Holub, Full-Stack Web Developer. JavaScript, Next.js, PHP, Laravel y Symfony."
-        canonical={BASE_URL} 
+        canonical={BASE_URL}
         openGraph={{ url: BASE_URL }}
       />
 
@@ -39,18 +40,18 @@ export default function HomePage() {
       <div className="hidden lg:block">
         <SideIcons />
       </div>
-      
+
       <section
         id="home"
         className="relative flex flex-col lg:flex-row min-h-screen bg-white"
       >
         {/* Left text */}
         <div className="w-full lg:w-1/2 px-4 sm:px-6 md:px-8 lg:px-24 py-8 sm:py-12 lg:py-20 flex flex-col justify-center z-10 order-2 lg:order-1">
-          
+
           <h1 className="text-2xl sm:text-3xl lg:text-3xl font-extrabold mb-2 sm:mb-3 text-gray-800">
             {t('home.greeting')}
           </h1>
-          
+
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-3 sm:mb-4 text-gray-900 leading-tight">
             <Trans
               ns="common"
@@ -68,11 +69,11 @@ export default function HomePage() {
               }}
             />
           </h2>
-          
+
           <p className="uppercase text-xs sm:text-sm font-semibold bg-yellow-400 text-black px-2 sm:px-3 py-1 w-max mb-4 sm:mb-6 tracking-wide rounded shadow">
             {t('home.role')}
           </p>
-          
+
           <p className="text-gray-600 text-sm sm:text-base lg:text-lg mb-6 sm:mb-8 leading-relaxed text-left sm:text-justify">
             <Trans
               ns="common"
@@ -83,13 +84,17 @@ export default function HomePage() {
               }}
             />
           </p>
-          
-          <a
-            href="#about"
-            className="inline-block w-max text-sm sm:text-base bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow transition duration-200 active:scale-95"
-          >
-            {t('home.cta')}
-          </a>
+
+          <div className="flex gap-4">
+            <a
+              href="#about"
+              className="inline-block w-max text-sm sm:text-base bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow transition duration-200 active:scale-95"
+            >
+              {t('home.cta')}
+            </a>
+
+             <DownloadCvButton label={t('home.downloadCv')} />
+          </div>
         </div>
 
         {/* Right image */}
@@ -110,7 +115,7 @@ export default function HomePage() {
         <div className="lg:sticky lg:top-0 lg:h-screen w-full lg:w-auto">
           <Sidebar />
         </div>
-        
+
         <div className="flex-1 w-full">
           <About />
           <Resume />
