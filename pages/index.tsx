@@ -92,7 +92,7 @@ export default function HomePage() {
             >
               {t('home.cta')}
             </a>
-
+            
              <DownloadCvButton label={t('home.downloadCv')} />
           </div>
         </div>
