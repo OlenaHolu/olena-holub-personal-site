@@ -2,15 +2,15 @@
   "home": {
     "greeting": "¡HOLA!",
     "name": "SOY <1>OLENA</1>",
-    "role": "Junior SAP ABAP Developer · Full Stack Web Developer",
-    "description": "Apasionada por crear soluciones limpias, significativas y bien estructuradas, ya sea utilizando tecnologías web modernas (<1>JavaScript, Next.js, PHP, Laravel, Symfony</1>) o trabajando en el creciente mundo de <1>SAP ABAP</1>.<0></0>Me impulsa comprender cómo funcionan las cosas, mejorarlas y transformar la complejidad en algo elegante y funcional.",
+    "role": "Full Stack Web Developer",
+    "description": "creativa y orientada al detalle, especializada en tecnologías modernas como <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> y <1>Symfony</1>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario.<0></0>Actualmente ubicada en España y abierta a oportunidades emocionantes remotas o presenciales.",
     "cta": "MÁS SOBRE MÍ",
     "downloadCv": "DESCARGAR CURRÍCULUM"
   },
   "about": {
     "sectionTitle": "SOBRE MÍ",
-    "heroTitle": "Soy <1>Olena Holub</1>, Junior SAP ABAP Developer & Full-Stack Web Developer",
-    "heroDescription": "con una base sólida en <1>desarrollo web full-stack</1> (JavaScript, TypeScript, Next.js, React, PHP, Laravel, Symfony) y una especialización en crecimiento en <1>SAP ABAP</1> y en desarrollo de software a nivel empresarial.<0></0><0></0>Me encanta crear aplicaciones limpias, escalables y bien estructuradas, tanto en entornos web modernos como dentro del ecosistema SAP. Mi experiencia en OOP, estructuras de datos, lógica de negocio y arquitectura limpia se traduce de forma natural al desarrollo en ABAP: modularización, validaciones, modelado de datos, código orientado al rendimiento y mantenibilidad a largo plazo.<0></0><0></0>Actualmente resido en España y estoy abierta a oportunidades tanto remotas como presenciales.<0></0><0></0>Tengo experiencia práctica desplegando aplicaciones con <1>Vercel, Railway y AWS</1>, además de un sólido conocimiento de <1>Java y Python</1>. Estoy profundamente comprometida con el aprendizaje continuo y con evolucionar hacia una profesional sólida en <1>SAP ABAP</1>, sin perder mi versatilidad como <1>desarrolladora full-stack</1>.",
+    "heroTitle": "Soy <1>Olena Holub</1>, Full-Stack Web Developer",
+    "heroDescription": "Especializada en tecnologías modernas como <1>JavaScript</1>, <1>Next.js</1>, <1>PHP</1>, <1>Laravel</1> y <1>Symfony</1>. Construyo aplicaciones escalables y elegantes con código limpio y gran experiencia de usuario. Actualmente ubicada en España y abierta a oportunidades emocionantes remotas o presenciales.<0></0><0></0>Mi experiencia en despliegue incluye plataformas como <1>Vercel</1>, <1>Railway</1> y <1>AWS</1>. También tengo sólida experiencia con lenguajes orientados a objetos como <1>Java</1> y <1>Python</1>, y siempre estoy comprometida con el aprendizaje continuo y la mejora de mis habilidades de desarrollo.",
     "stats": {
       "years": "AÑOS DE FORMACIÓN",
       "projects": "PROYECTOS COMPLETADOS",
@@ -53,7 +53,7 @@
       "fullstack": {
         "title": "Desarrolladora Full Stack",
         "company": "Proyecto Personal",
-        "description": "<1>Remoto – Mar 2024 – Presente</1><0></0>Desarrollo completo de una plataforma web real, incluyendo diseño arquitectónico limpio, modelado de datos y lógica de negocio compleja. Experiencia en integraciones con APIs y optimización del rendimiento. Además, estoy desarrollando habilidades orientadas a ABAP, como modularización, validaciones, gestión estructurada de datos y mantenimiento evolutivo."
+        "description": "<1>Remoto – Mar 2024 – Presente</1><0></0>Creé una plataforma full-stack para análisis de apnea usando Laravel (API) y React. Desplegado con Vercel y Railway. Enfoque en flujo de datos, experiencia de usuario y arquitectura."
       },
       "intern": {
         "title": "Desarrolladora Web en Prácticas",
